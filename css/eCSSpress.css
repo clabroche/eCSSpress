@@ -171,5 +171,23 @@ ul li{
 .align-right{text-align: right;}
 .align-center{text-align: center;}
 
+.table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.table td,.table th{
+	padding:8px;
+}
+.table th{
+	font-weight: bold;
+}
 
 
+.table-solid td,.table-solid th{
+	border: 1px solid #000;
+}
+
+
+.table-alt tr:nth-child(even) {
+    background-color: #dddddd;
+}
