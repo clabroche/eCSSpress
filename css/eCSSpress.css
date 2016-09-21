@@ -102,7 +102,6 @@ blockquote, code{
 	padding-bottom: 5px;
 	
 	padding-left: 4px;	
-	border-radius: 0.5em;
 	display: block;
 
 }
@@ -110,12 +109,8 @@ blockquote{
 	border-left: 4px solid #3B95FF;
 	background-color: #EDEDED
 }
-blockquote:before{
-	content: "Citation:";
-	display: inline-block;
-	width: 100%;
-	text-decoration: underline;
-}
+blockquote:before{content: '"';}
+blockquote:after{content: '"';}
 code{
 	border-left: 4px solid #DDDDDD;
 	background-color: #505050;
@@ -195,3 +190,5 @@ ul li{
 	background-color: #3B95FF;
 	color: white;
 }
+
+
