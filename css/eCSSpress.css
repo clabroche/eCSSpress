@@ -142,18 +142,17 @@ pre {
 }
 
 kbd{
+	padding-bottom: 2px;
+	padding-top: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
 	background-color: #3B95FF;
-	padding: 2px;
 	color: white;
-	-moz-box-shadow: -4px 7px 5px 0px #656565;
--webkit-box-shadow: -4px 7px 5px 0px #656565;
--o-box-shadow: -4px 7px 5px 0px #656565;
-box-shadow: -4px 7px 5px 0px #656565;
-filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=224, Strength=8);
--moz-border-radius: 0.3em;
--webkit-border-radius: 0.3em;
-border-radius: 0.3em;
-font-weight: bold;
+	box-shadow: -2px 2px 2px 0px #656565;
+	border-radius: 0.3em;
+	font-weight: bold;
+	font-size: 0.85em;
+	border: 1px solid #888888;
 }
 
 ul li{
