@@ -1,0 +1,198 @@
+/* 
+	CSS reset de Eric  Meyer
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+h1,h2,h3,h4,h5,h6{
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+	font-weight: bold;
+}
+
+h1{font-size: 2.5em;}
+h2{font-size: 2.25em;}
+h3{font-size: 2em;}
+h4{font-size: 1.75em;}
+h5{font-size: 1.50em;}
+h6{font-size: 1.25em;}
+
+h1 >small,h2>small,h3>small,h4>small,h5>small,h6>small{
+	font-size: 12px;
+	color:grey; 
+}
+.sub{
+	font-size: 12px;
+	color:grey; 
+}
+
+
+
+p {margin-bottom: 10px;}
+
+
+mark{background-color: #CC0000}
+del {text-decoration: line-through;}
+ins {text-decoration: underline;}
+strong{font-weight: bold;}
+em{font-style: italic;}
+abbr{
+    border-bottom: 1px dotted black;
+    text-decoration: none ;
+}
+
+
+
+
+
+
+blockquote, code{
+
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+	padding-left: 4px;	
+	border-radius: 0.5em;
+	display: block;
+
+}
+blockquote{
+	border-left: 4px solid #3B95FF;
+	background-color: #EDEDED
+}
+blockquote:before{
+	content: "Citation:";
+	display: inline-block;
+	width: 100%;
+	text-decoration: underline;
+}
+code{
+	border-left: 4px solid #DDDDDD;
+	background-color: #505050;
+	color: #DDDDDD;
+}
+code:before{
+	content: "Code:";
+	display: inline-block;
+	width: 100%;
+	text-decoration: underline;
+}
+
+
+
+
+
+pre {
+	width: 99%;                
+	white-space: pre-wrap;              
+	white-space: -moz-pre-wrap ; 
+	white-space: -pre-wrap;             
+	white-space: -o-pre-wrap;     
+	word-wrap: break-word;    
+}
+
+kbd{
+	background-color: #3B95FF;
+	padding: 2px;
+	color: white;
+	-moz-box-shadow: -4px 7px 5px 0px #656565;
+-webkit-box-shadow: -4px 7px 5px 0px #656565;
+-o-box-shadow: -4px 7px 5px 0px #656565;
+box-shadow: -4px 7px 5px 0px #656565;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=224, Strength=8);
+-moz-border-radius: 0.3em;
+-webkit-border-radius: 0.3em;
+border-radius: 0.3em;
+font-weight: bold;
+}
+
+ul li{
+	margin-left: 2em;
+	display: list-item;
+	list-style-type: disc;
+}
+.ul-square li{list-style-type: square;}
+.ul-nodecoration li{list-style-type: none;}
+
+.lowercase{text-transform: lowercase;}
+.uppercase{text-transform: uppercase;}
+.justify{text-align: justify;}
+.align-left{text-align: left;}
+.align-right{text-align: right;}
+.align-center{text-align: center;}
+
+.table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.table td,.table th{
+	padding:8px;
+}
+.table th{
+	font-weight: bold;
+}
+
+
+.table-solid td,.table-solid th{
+	border: 1px solid #000;
+}
+
+
+.table-alt tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+.table-hover tr:hover{
+	background-color: #3B95FF;
+	color: white;
+}
