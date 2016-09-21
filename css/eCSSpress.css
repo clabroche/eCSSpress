@@ -189,5 +189,10 @@ ul li{
 
 
 .table-alt tr:nth-child(even) {
-    background-color: #dddddd;
+	background-color: #dddddd;
+}
+
+.table-hover tr:hover{
+	background-color: #3B95FF;
+	color: white;
 }
