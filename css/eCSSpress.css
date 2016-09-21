@@ -91,6 +91,49 @@ abbr{
 
 
 
+blockquote, code{
+
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+	padding-left: 4px;	
+	border-radius: 0.5em;
+	display: block;
+
+}
+blockquote{
+	border-left: 4px solid #3B95FF;
+	background-color: #EDEDED
+}
+blockquote:before{
+	content: "Citation:";
+	display: inline-block;
+	width: 100%;
+	text-decoration: underline;
+}
+code{
+	border-left: 4px solid #DDDDDD;
+	background-color: #505050;
+	color: #DDDDDD;
+}
+code:before{
+	content: "Code:";
+	display: inline-block;
+	width: 100%;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
 
 
 
