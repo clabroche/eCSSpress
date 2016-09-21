@@ -161,10 +161,15 @@ ul li{
 	display: list-item;
 	list-style-type: disc;
 }
-.ul-square li{
-	list-style-type: square;
-}
+.ul-square li{list-style-type: square;}
+.ul-nodecoration li{list-style-type: none;}
 
-.ul-nodecoration li{
-	list-style-type: none;
-}
+.lowercase{text-transform: lowercase;}
+.uppercase{text-transform: uppercase;}
+.justify{text-align: justify;}
+.align-left{text-align: left;}
+.align-right{text-align: right;}
+.align-center{text-align: center;}
+
+
+
