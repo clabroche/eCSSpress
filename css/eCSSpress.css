@@ -43,13 +43,14 @@ table {
 	border-spacing: 0;
 }
 
-
+div,span{
+	box-sizing: border-box;
+}
 
 
 
 h1,h2,h3,h4,h5,h6{
-	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
-	font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;	
 	font-weight: bold;
 }
 
@@ -90,24 +91,27 @@ abbr{
 
 
 blockquote, code{
-
 	width: 90%;
+}
+.result{
+	width: 100%;
+	margin-top: 10px;
+	line-height: initial;
+}
+blockquote,code{
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 20px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 4px;	
+	padding-right: 4px;	
 	display: block;
-
-}
-blockquote,code{
 	border-radius: 0.2em;
 	line-height: 1.2em;
 	border: 1px solid #ddd;
 	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-	box-shadow: 10px;
 	counter-reset: ligne;
 	color: #303030;
 }
@@ -119,6 +123,12 @@ blockquote:before {
 	line-height: 0.1em;
 	margin-right: 0.25em;
 	vertical-align: -0.4em;
+}
+.result:before{
+	content: "Result:";
+	display:block;
+	margin-bottom:10px;
+	border-bottom: 1px solid #ddd;
 }
 blockquote .author{
 	width: 100%;
