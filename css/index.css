@@ -1,0 +1,12 @@
+.navLateral{
+	display: inline-block;
+	height: 100%;
+	width:15%; 
+	background-color: red;
+	position: fixed;
+}
+
+.mainSection{
+	margin-left: 15%;
+	width: 85%;
+}

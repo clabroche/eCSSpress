@@ -1,6 +1,4 @@
-/* 
-	CSS reset de Eric  Meyer
-*/
+/*CSS reset de Eric  Meyer*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -82,8 +80,8 @@ ins {text-decoration: underline;}
 strong{font-weight: bold;}
 em{font-style: italic;}
 abbr{
-    border-bottom: 1px dotted black;
-    text-decoration: none ;
+	border-bottom: 1px dotted black;
+	text-decoration: none ;
 }
 
 
@@ -100,55 +98,81 @@ blockquote, code{
 	margin-bottom: 5px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	
 	padding-left: 4px;	
 	display: block;
 
 }
-blockquote{
-	border-left: 4px solid #3B95FF;
-	background-color: #EDEDED
+blockquote,code{
+	border-radius: 0.2em;
+	line-height: 1.2em;
+	border: 1px solid #ddd;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 10px;
+	counter-reset: ligne;
+	color: #303030;
 }
-blockquote:before{content: '"';}
-blockquote:after{content: '"';}
-code{
-	border-left: 4px solid #DDDDDD;
-	background-color: #505050;
+blockquote{quotes: "\201C""\201D""\2018""\2019";}
+blockquote:before {
 	color: #DDDDDD;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
 }
-code:before{
-	content: "Code:";
-	display: inline-block;
+blockquote .author{
 	width: 100%;
-	text-decoration: underline;
+	padding-right: 10px;
+	text-align: right;
+}
+blockquote :before{
+	content: "- ";
 }
 
-
-
-
-
+code span{
+	display: block;
+}
+code span:before {
+	border-right: 1px solid #ddd;
+	display: inline-block;
+	counter-increment: ligne;
+	content: counter(ligne);
+	margin-right: 5px;
+	padding-right: 5px;
+}
 pre {
-	width: 99%;                
-	white-space: pre-wrap;              
-	white-space: -moz-pre-wrap ; 
-	white-space: -pre-wrap;             
-	white-space: -o-pre-wrap;     
-	word-wrap: break-word;    
+	width: 99%;                white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */   
+}
+kbd {
+    color: #252525;
+    font-size: 0.8em;
+    padding: 2px;
+    line-height: 2.5em;
+    background-color: #FFFFFF;
+    border-top: solid 1px #CCC;
+    border-right: solid 2px #AAA;
+    border-bottom: solid 3px #999;
+    border-left: solid 2px #BBB;
+    border-radius: 4px;
 }
 
-kbd{
-	padding-bottom: 2px;
-	padding-top: 2px;
-	padding-left: 4px;
-	padding-right: 4px;
-	background-color: #3B95FF;
-	color: white;
-	box-shadow: -2px 2px 2px 0px #656565;
-	border-radius: 0.3em;
-	font-weight: bold;
-	font-size: 0.85em;
-	border: 1px solid #888888;
+kbd:hover {
+    color: #222;
+    background-color: #FAFAFA;
 }
+kbd:active, kbd.selected {
+    border-top: solid 2px #999;
+    border-right: solid 2px #BBB;
+    border-bottom: solid 2px #CCC;
+    border-left: solid 2px #AAA;
+}
+
+
+
 
 ul li{
 	margin-left: 2em;
@@ -158,6 +182,8 @@ ul li{
 .ul-square li{list-style-type: square;}
 .ul-nodecoration li{list-style-type: none;}
 
+
+
 .lowercase{text-transform: lowercase;}
 .uppercase{text-transform: uppercase;}
 .justify{text-align: justify;}
@@ -165,30 +191,25 @@ ul li{
 .align-right{text-align: right;}
 .align-center{text-align: center;}
 
+
+
+
 .table {
 	border-collapse: collapse;
 	width: 100%;
 }
-.table td,.table th{
-	padding:8px;
-}
-.table th{
-	font-weight: bold;
-}
-
-
-.table-solid td,.table-solid th{
-	border: 1px solid #000;
-}
-
-
-.table-alt tr:nth-child(even) {
-	background-color: #dddddd;
-}
-
+.table td,.table th{padding:8px;}
+.table th{font-weight: bold;}
+.table-solid td,.table-solid th{border: 1px solid #000;}
+.table-alt tr:nth-child(even) {background-color: #dddddd;}
 .table-hover tr:hover{
 	background-color: #3B95FF;
 	color: white;
 }
 
 
+.section {
+	display: inline-block;
+	height: 100vh;
+	width: 100%;
+}
