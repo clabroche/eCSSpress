@@ -248,6 +248,7 @@ ul li {
   background-color: #eeeeee;
   border: 1px solid #dfdfdf;
   color: white;
+  color: black;
   line-height: 2em;
   font-size: 1em;
   padding-left: 10px;
@@ -325,11 +326,23 @@ ul li {
   display: flex;
   width: 100%;
   background-color: #CCCCCC;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-top: 30px;
+  padding-left: 30px;
   align-items: flex-end;
   padding-bottom: 50px; }
   .header small {
     margin-left: 5px; }
+
+.jumbotron {
+  width: 100%;
+  background-color: #CCCCCC;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px; }
+  .jumbotron h1 {
+    margin-bottom: 20px; }
+  .jumbotron button {
+    margin-top: 20px; }
 
 /*# sourceMappingURL=eCSSpress.css.map */

@@ -2,12 +2,27 @@
 	display: flex;
 	width: 100%;
 	background-color: $defaultBackgroundColor;
-	padding-top: 20px;
-	padding-left: 20px;
+	padding-top: 30px;
+	padding-left: 30px;
 	align-items: flex-end;
-
+	padding-bottom: 50px;
 	small{
 		margin-left: 5px;
 	}
+}
+
+
+.jumbotron{
+	width: 100%;
+	background-color: $defaultBackgroundColor;
+	padding-top: 50px;
 	padding-bottom: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
+	h1{
+		margin-bottom: 20px;
+	}
+	button{
+		margin-top: 20px;
+	}
 }

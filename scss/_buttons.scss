@@ -12,6 +12,7 @@
 /*Buttons Size*/
 .btn{
 	@include colorizeButton($lightGrey);
+	color: black;
 	line-height: 2em;
 	font-size: 1em;
 	padding-left: 10px;
