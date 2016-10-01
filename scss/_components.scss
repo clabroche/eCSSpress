@@ -1,0 +1,13 @@
+.header{
+	display: flex;
+	width: 100%;
+	background-color: $defaultBackgroundColor;
+	padding-top: 20px;
+	padding-left: 20px;
+	align-items: flex-end;
+
+	small{
+		margin-left: 5px;
+	}
+	padding-bottom: 50px;
+}
