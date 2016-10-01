@@ -1,6 +1,17 @@
+@mixin colorizeButton($color) {
+    background-color: $color;
+    border: 1px solid darken($color,6);
+    color:$white;
+    &:hover,&:focus {background-color: darken($color,5);}
+    &:active{background-color: darken($color,10);}
+}
 
 
+
+
+/*Buttons Size*/
 .btn{
+	@include colorizeButton($lightGrey);
 	line-height: 2em;
 	font-size: 1em;
 	padding-left: 10px;
@@ -10,16 +21,7 @@
 	color: #303030;
 	display: inline-block;
 	cursor: pointer;
-	background-color: #eeeeee;
 }
-
-.btn:hover, .btn:focus{
-	background-color: rgb(220,220,220);
-}
-.btn:active{
-	background-color: rgb(200,200,200);
-}
-
 .btn-sm{
 	font-size: 0.8em;
 	line-height: 1.8em;
@@ -33,38 +35,23 @@
 	padding-right: 15px;
 }
 
-.btn-red{
-	border: 1px solid rgb(180,0,0);
-	background-color: rgb(230,0,0);
-	color: #fff;
+.btn-x-lg{
+	width: 100%;
 }
-.btn-red:hover,.btn-red:focus{background-color: rgb(200,0,0);}
-.btn-red:active{background-color: rgb(180,0,0);}
 
-.btn-green{
-	border: 1px solid rgb(0,149,32);
-	background-color:rgb(0,179,32);
-	color: #fff;
-}
-.btn-green:hover,.btn-green:focus{background-color:rgb(0,159,32);}
-.btn-green:active{background-color:rgb(0,149,32);}
 
-.btn-blue{
-	border: 1px solid rgb(65,85,160);
-	background-color:rgb(65,85,222);
-	color: #fff;
-}
-.btn-blue:hover,.btn-blue:focus{background-color:rgb(65,85,180);}
-.btn-blue:active{background-color:rgb(65,85,160);}
+
+/*Buttons Color*/
+.btn-red{@include colorizeButton($red);}
+.btn-yellow{@include colorizeButton($yellow);}
+.btn-green{@include colorizeButton($green);}
+.btn-blue{@include colorizeButton($blue);}
 
 .btn-flat{
 	border: none;
 	border-radius: 0px;
 }
 
-.btn-x-lg{
-	width: 100%;
-}
 .btn-fancy{
 	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 	background-image: -webkit-linear-gradient(top,rgba(0,0,0,0.1),rgba(0,0,0,0.4));

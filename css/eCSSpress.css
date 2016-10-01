@@ -243,7 +243,11 @@ ul li {
   background-color: #3B95FF;
   color: white; }
 
+/*Buttons Size*/
 .btn {
+  background-color: #eeeeee;
+  border: 1px solid #dfdfdf;
+  color: white;
   line-height: 2em;
   font-size: 1em;
   padding-left: 10px;
@@ -252,14 +256,11 @@ ul li {
   border: 1px solid #bbb;
   color: #303030;
   display: inline-block;
-  cursor: pointer;
-  background-color: #eeeeee; }
-
-.btn:hover, .btn:focus {
-  background-color: gainsboro; }
-
-.btn:active {
-  background-color: #c8c8c8; }
+  cursor: pointer; }
+  .btn:hover, .btn:focus {
+    background-color: #e1e1e1; }
+  .btn:active {
+    background-color: #d5d5d5; }
 
 .btn-sm {
   font-size: 0.8em;
@@ -273,45 +274,49 @@ ul li {
   padding-left: 15px;
   padding-right: 15px; }
 
+.btn-x-lg {
+  width: 100%; }
+
+/*Buttons Color*/
 .btn-red {
-  border: 1px solid #b40000;
   background-color: #e60000;
-  color: #fff; }
+  border: 1px solid #c70000;
+  color: white; }
+  .btn-red:hover, .btn-red:focus {
+    background-color: #cd0000; }
+  .btn-red:active {
+    background-color: #b30000; }
 
-.btn-red:hover, .btn-red:focus {
-  background-color: #c80000; }
-
-.btn-red:active {
-  background-color: #b40000; }
+.btn-yellow {
+  background-color: #F2E22B;
+  border: 1px solid #f0de0f;
+  color: white; }
+  .btn-yellow:hover, .btn-yellow:focus {
+    background-color: #f1df13; }
+  .btn-yellow:active {
+    background-color: #dccc0e; }
 
 .btn-green {
-  border: 1px solid #009520;
   background-color: #00b320;
-  color: #fff; }
-
-.btn-green:hover, .btn-green:focus {
-  background-color: #009f20; }
-
-.btn-green:active {
-  background-color: #009520; }
+  border: 1px solid #00941b;
+  color: white; }
+  .btn-green:hover, .btn-green:focus {
+    background-color: #009a1b; }
+  .btn-green:active {
+    background-color: #008017; }
 
 .btn-blue {
-  border: 1px solid #4155a0;
   background-color: #4155de;
-  color: #fff; }
-
-.btn-blue:hover, .btn-blue:focus {
-  background-color: #4155b4; }
-
-.btn-blue:active {
-  background-color: #4155a0; }
+  border: 1px solid #273ed9;
+  color: white; }
+  .btn-blue:hover, .btn-blue:focus {
+    background-color: #2b42da; }
+  .btn-blue:active {
+    background-color: #2338c9; }
 
 .btn-flat {
   border: none;
   border-radius: 0px; }
-
-.btn-x-lg {
-  width: 100%; }
 
 .btn-fancy {
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
