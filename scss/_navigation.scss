@@ -1,0 +1,26 @@
+.navbar{
+	@extend .ul-nodecoration;
+	display: flex;
+    flex-direction: row;
+    background-color: $navbarColor;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: stretch;
+    line-height: $navbarHeight;
+    .disabled{
+    	display: none;
+    }
+    .active{
+		border-bottom: solid 4px darken($navbarColor, 50);
+    }
+    li{
+    	padding-left: 1em;
+    	padding-right: 1em;
+    	margin: 0;
+    	&:hover{
+    		background-color: darken($navbarColor, 20);
+    	}
+    }
+    height: $navbarHeight;
+
+}

@@ -11,7 +11,7 @@
 
 /*Buttons Size*/
 .btn{
-	@include colorizeButton($lightGrey);
+	@include colorizeButton($buttonDefault);
 	color: black;
 	line-height: 2em;
 	font-size: 1em;
@@ -42,10 +42,10 @@
 
 
 /*Buttons Color*/
-.btn-red{@include colorizeButton($red);}
-.btn-yellow{@include colorizeButton($yellow);}
-.btn-green{@include colorizeButton($green);}
-.btn-blue{@include colorizeButton($blue);}
+.btn-red{@include colorizeButton($buttonRed);}
+.btn-yellow{@include colorizeButton($buttonYellow);}
+.btn-green{@include colorizeButton($buttonGreen);}
+.btn-blue{@include colorizeButton($buttonBlue);}
 
 .btn-flat{
 	border: none;

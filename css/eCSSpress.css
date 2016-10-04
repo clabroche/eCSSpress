@@ -46,6 +46,8 @@ table {
 div, span {
   box-sizing: border-box; }
 
+/*Button Color*/
+/*Navigation*/
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
   font-weight: bold; }
@@ -220,7 +222,7 @@ ul li {
 .ul-square li {
   list-style-type: square; }
 
-.ul-nodecoration li {
+.ul-nodecoration li, .navbar li {
   list-style-type: none; }
 
 .table {
@@ -245,8 +247,8 @@ ul li {
 
 /*Buttons Size*/
 .btn {
-  background-color: #eeeeee;
-  border: 1px solid #dfdfdf;
+  background-color: #F0F0F0;
+  border: 1px solid #e1e1e1;
   color: white;
   color: black;
   line-height: 2em;
@@ -258,9 +260,9 @@ ul li {
   display: inline-block;
   cursor: pointer; }
   .btn:hover, .btn:focus {
-    background-color: #e1e1e1; }
+    background-color: #e3e3e3; }
   .btn:active {
-    background-color: #d5d5d5; }
+    background-color: #d7d7d7; }
 
 .btn-sm {
   font-size: 0.8em;
@@ -325,7 +327,7 @@ ul li {
 .header {
   display: flex;
   width: 100%;
-  background-color: #CCCCCC;
+  background-color: #E5E5E5;
   padding-top: 30px;
   padding-left: 30px;
   align-items: flex-end;
@@ -335,7 +337,7 @@ ul li {
 
 .jumbotron {
   width: 100%;
-  background-color: #CCCCCC;
+  background-color: #E5E5E5;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 30px;
@@ -344,5 +346,25 @@ ul li {
     margin-bottom: 20px; }
   .jumbotron button {
     margin-top: 20px; }
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #E5E5E5;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: stretch;
+  line-height: 50px;
+  height: 50px; }
+  .navbar .disabled {
+    display: none; }
+  .navbar .active {
+    border-bottom: solid 4px #666666; }
+  .navbar li {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0; }
+    .navbar li:hover {
+      background-color: #b2b2b2; }
 
 /*# sourceMappingURL=eCSSpress.css.map */
