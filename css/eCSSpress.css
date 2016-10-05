@@ -283,40 +283,40 @@ ul li {
 
 /*Buttons Color*/
 .btn-red {
-  background-color: #e60000;
-  border: 1px solid #c70000;
+  background-color: #C52525;
+  border: 1px solid #ab2020;
   color: white; }
   .btn-red:hover, .btn-red:focus {
-    background-color: #cd0000; }
+    background-color: #b02121; }
   .btn-red:active {
-    background-color: #b30000; }
+    background-color: #9a1d1d; }
 
 .btn-yellow {
-  background-color: #F2E22B;
-  border: 1px solid #f0de0f;
+  background-color: #BBAD0D;
+  border: 1px solid #9e930b;
   color: white; }
   .btn-yellow:hover, .btn-yellow:focus {
-    background-color: #f1df13; }
+    background-color: #a3970b; }
   .btn-yellow:active {
-    background-color: #dccc0e; }
+    background-color: #8b810a; }
 
 .btn-green {
-  background-color: #00b320;
-  border: 1px solid #00941b;
+  background-color: #2FA242;
+  border: 1px solid #288a38;
   color: white; }
   .btn-green:hover, .btn-green:focus {
-    background-color: #009a1b; }
+    background-color: #298e3a; }
   .btn-green:active {
-    background-color: #008017; }
+    background-color: #247a32; }
 
 .btn-blue {
-  background-color: #4155de;
-  border: 1px solid #273ed9;
+  background-color: #3A49C1;
+  border: 1px solid #3340a9;
   color: white; }
   .btn-blue:hover, .btn-blue:focus {
-    background-color: #2b42da; }
+    background-color: #3442ad; }
   .btn-blue:active {
-    background-color: #2338c9; }
+    background-color: #2e3a9a; }
 
 .btn-flat {
   border: none;
@@ -408,8 +408,5 @@ ul li {
   .pagination .active {
     background-color: #b2b2b2;
     color: white; }
-
-.disabled {
-  display: none; }
 
 /*# sourceMappingURL=eCSSpress.css.map */
