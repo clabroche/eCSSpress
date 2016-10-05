@@ -1,17 +1,4 @@
-.navLateral {
-  display: inline-block;
-  height: 100%;
-  width: 15%;
-  background-color: #005676;
-  color: white;
-  position: fixed; }
-
-.navLateral a {
-  color: white; }
-
 #navLogo {
-  width: 100%;
-  text-align: center;
   font-size: 1.5em;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.2);
@@ -21,11 +8,25 @@
   margin-bottom: 15px; }
 
 #container {
-  margin-left: 15%;
+  margin: 0 auto;
   width: 85%; }
 
 #subContainer {
   margin: 0 auto;
   width: 90%; }
+
+#containerNavbarDesktop {
+  width: 100%;
+  border: 1px solid #D5D5D5; }
+  #containerNavbarDesktop #containerNavbarTablet {
+    border: 1px solid #D5D5D5;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 80%; }
+    #containerNavbarDesktop #containerNavbarTablet #containerNavbarMobile {
+      border: 1px solid #D5D5D5;
+      margin: 0 auto;
+      margin-top: 10px;
+      width: 80%; }
 
 /*# sourceMappingURL=index.css.map */

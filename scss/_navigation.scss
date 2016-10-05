@@ -1,26 +1,52 @@
 .navbar{
 	@extend .ul-nodecoration;
 	display: flex;
-    flex-direction: row;
-    background-color: $navbarColor;
-    width: 100%;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: stretch;
+
+    background-color: $navbarBackgroundColor;
+
+    width: 100%;
+
+    min-height: $navbarHeight;
     line-height: $navbarHeight;
-    .disabled{
-    	display: none;
-    }
-    .active{
-		border-bottom: solid 4px darken($navbarColor, 50);
-    }
+
+    .disabled{display: none;}
+    
     li{
     	padding-left: 1em;
     	padding-right: 1em;
     	margin: 0;
-    	&:hover{
-    		background-color: darken($navbarColor, 20);
-    	}
+    	border-bottom: 1px solid darken($navbarBackgroundColor, 20);
+    	text-align: center;
+    	&:hover{background-color: darken($navbarBackgroundColor, 20);}
     }
-    height: $navbarHeight;
 
+	.active{
+		border-left: solid 4px darken($navbarBackgroundColor, 50);
+    }
+    a{
+    	text-decoration: none;
+    	color: $navbarColor;
+    }
+
+    @media screen and (min-width: 400px) {
+    	flex-direction:row;
+    	justify-content: space-around ;
+    	li{border-bottom: none}
+	    
+		.active{
+			border-bottom: solid 4px darken($navbarBackgroundColor, 50);
+			border-left: none;
+	    }
+
+
+
+	    @media screen and (min-width: 900px) {
+	    	justify-content: flex-end ;
+	    }
+    }
+	
 }
+

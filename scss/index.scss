@@ -1,17 +1,5 @@
-.navLateral{
-	display: inline-block;
-	height: 100%;
-	width:15%; 
-	background-color: #005676;
-	color: white;
-	position: fixed;
-}
-.navLateral a{
-	color: white;
-}
+$defaultLightBackgroundColor:#D5D5D5;
 #navLogo{
-	width: 100%;
-	text-align: center;
 	font-size: 1.5em;
 	font-weight: bold;
 	background-color: rgba(0,0,0,0.2);
@@ -21,10 +9,30 @@
 	margin-bottom: 15px;
 }
 #container{
-	margin-left: 15%;
+	margin: 0 auto;
 	width: 85%;
 }
 #subContainer{
 	margin:0 auto;
 	width: 90%;
+}
+
+
+
+#containerNavbarDesktop{
+	width: 100%;
+	border: 1px solid $defaultLightBackgroundColor;
+	#containerNavbarTablet{
+		border: 1px solid $defaultLightBackgroundColor;
+		margin: 0 auto;
+		margin-top: 10px;
+		width: 80%;
+		#containerNavbarMobile{
+			border: 1px solid $defaultLightBackgroundColor;
+			margin: 0 auto;
+			margin-top: 10px;
+			width: 80%;
+
+		}
+	}
 }
