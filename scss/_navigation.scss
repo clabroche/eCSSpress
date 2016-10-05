@@ -12,7 +12,6 @@
     min-height: $navbarHeight;
     line-height: $navbarHeight;
 
-    .disabled{display: none;}
     
     li{
     	padding-left: 1em;
@@ -54,8 +53,8 @@
 
 
 .breadcrumb{
-	width: 100%;
 	@extend .ul-nodecoration;
+	width: 100%;
 	display: flex;
 	justify-content:flex-start;
 	background-color: $breadcrumbBackgroundColor;
@@ -66,3 +65,30 @@
 	border: 1px solid darken($breadcrumbBackgroundColor,20);
 	color: $breadcrumbColor;
 }
+
+
+.pagination{
+
+	@extend .ul-nodecoration;
+	vertical-align: top;
+	display: inline-flex;
+	
+	li{
+
+		padding: 10px;
+		margin: 0;
+		background-color: $paginationBackground;
+		&:hover{
+			background-color: darken($paginationBackground,10);
+
+		}
+	}
+	.active{
+		background-color: darken($paginationBackground,20);
+		color: lighten($paginationBackground,20)
+	}
+
+}
+
+
+    .disabled{display: none;}

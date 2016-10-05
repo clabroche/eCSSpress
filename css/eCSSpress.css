@@ -49,6 +49,7 @@ div, span {
 /*Button Color*/
 /*Navigation*/
 /*breadcrumb*/
+/*Paginition*/
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
   font-weight: bold; }
@@ -223,7 +224,7 @@ ul li {
 .ul-square li {
   list-style-type: square; }
 
-.ul-nodecoration li, .navbar li, .breadcrumb li {
+.ul-nodecoration li, .navbar li, .breadcrumb li, .pagination li {
   list-style-type: none; }
 
 .table {
@@ -357,8 +358,6 @@ ul li {
   width: 100%;
   min-height: 50px;
   line-height: 50px; }
-  .navbar .disabled {
-    display: none; }
   .navbar li {
     padding-left: 1em;
     padding-right: 1em;
@@ -396,5 +395,21 @@ ul li {
     margin: 0; }
   .breadcrumb li:after {
     content: ">"; }
+
+.pagination {
+  vertical-align: top;
+  display: inline-flex; }
+  .pagination li {
+    padding: 10px;
+    margin: 0;
+    background-color: #E5E5E5; }
+    .pagination li:hover {
+      background-color: #cccccc; }
+  .pagination .active {
+    background-color: #b2b2b2;
+    color: white; }
+
+.disabled {
+  display: none; }
 
 /*# sourceMappingURL=eCSSpress.css.map */
