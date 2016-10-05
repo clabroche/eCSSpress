@@ -48,6 +48,7 @@ div, span {
 
 /*Button Color*/
 /*Navigation*/
+/*breadcrumb*/
 h1, h2, h3, h4, h5, h6 {
   font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
   font-weight: bold; }
@@ -222,7 +223,7 @@ ul li {
 .ul-square li {
   list-style-type: square; }
 
-.ul-nodecoration li, .navbar li {
+.ul-nodecoration li, .navbar li, .breadcrumb li {
   list-style-type: none; }
 
 .table {
@@ -383,5 +384,17 @@ ul li {
   @media screen and (min-width: 400px) and (min-width: 900px) {
     .navbar {
       justify-content: flex-end; } }
+
+.breadcrumb {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #E5E5E5;
+  border: 1px solid #b2b2b2;
+  color: #404040; }
+  .breadcrumb li {
+    margin: 0; }
+  .breadcrumb li:after {
+    content: ">"; }
 
 /*# sourceMappingURL=eCSSpress.css.map */

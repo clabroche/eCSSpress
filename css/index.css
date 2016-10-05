@@ -16,17 +16,6 @@
   width: 90%; }
 
 #containerNavbarDesktop {
-  width: 100%;
-  border: 1px solid #D5D5D5; }
-  #containerNavbarDesktop #containerNavbarTablet {
-    border: 1px solid #D5D5D5;
-    margin: 0 auto;
-    margin-top: 10px;
-    width: 80%; }
-    #containerNavbarDesktop #containerNavbarTablet #containerNavbarMobile {
-      border: 1px solid #D5D5D5;
-      margin: 0 auto;
-      margin-top: 10px;
-      width: 80%; }
+  width: 100%; }
 
 /*# sourceMappingURL=index.css.map */

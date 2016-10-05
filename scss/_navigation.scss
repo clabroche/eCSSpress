@@ -50,3 +50,19 @@
 	
 }
 
+
+
+
+.breadcrumb{
+	width: 100%;
+	@extend .ul-nodecoration;
+	display: flex;
+	justify-content:flex-start;
+	background-color: $breadcrumbBackgroundColor;
+	li{margin: 0;}
+	li:after{
+		content: ">"
+	}
+	border: 1px solid darken($breadcrumbBackgroundColor,20);
+	color: $breadcrumbColor;
+}

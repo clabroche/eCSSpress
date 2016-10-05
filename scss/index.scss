@@ -21,18 +21,4 @@ $defaultLightBackgroundColor:#D5D5D5;
 
 #containerNavbarDesktop{
 	width: 100%;
-	border: 1px solid $defaultLightBackgroundColor;
-	#containerNavbarTablet{
-		border: 1px solid $defaultLightBackgroundColor;
-		margin: 0 auto;
-		margin-top: 10px;
-		width: 80%;
-		#containerNavbarMobile{
-			border: 1px solid $defaultLightBackgroundColor;
-			margin: 0 auto;
-			margin-top: 10px;
-			width: 80%;
-
-		}
-	}
 }

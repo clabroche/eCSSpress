@@ -12,5 +12,10 @@ $buttonLightGrey:#eeeeee !default;
 $buttonYellow:#F2E22B !default;
 
 /*Navigation*/
-$navbarBackgroundColor: #E5E5E5 !default;
+$navbarBackgroundColor: $defaultLightBackgroundColor !default;
 $navbarColor: #000000 !default;
+
+
+/*breadcrumb*/
+$breadcrumbBackgroundColor:$defaultLightBackgroundColor !default;
+$breadcrumbColor: #404040;
