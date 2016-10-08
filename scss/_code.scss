@@ -45,6 +45,8 @@ blockquote :before{
 
 code span{
 	display: block;
+	
+	 white-space: pre-wrap;
 }
 code span:before {
 	border-right: 1px solid #ddd;

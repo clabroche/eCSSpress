@@ -167,7 +167,8 @@ blockquote :before {
   content: "- "; }
 
 code span {
-  display: block; }
+  display: block;
+  white-space: pre-wrap; }
 
 code span:before {
   border-right: 1px solid #ddd;
