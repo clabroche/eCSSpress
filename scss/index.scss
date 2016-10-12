@@ -1,3 +1,5 @@
+@import "grid";
+
 $defaultLightBackgroundColor:#D5D5D5;
 
 #container{
@@ -7,12 +9,20 @@ $defaultLightBackgroundColor:#D5D5D5;
 
 
 
-#containerNavbarDesktop{
-	width: 100%;
+
+section{
+	margin-bottom: 100px;
 }
 
 
 
-section{
-	margin-bottom: 100px;
+
+.row{
+	background-color: $defaultLightBackgroundColor;
+}
+@for $cols from 1 through $numbCol {
+	.span-#{$cols} {
+		background-color: grey;
+		color: white;
+	}
 }

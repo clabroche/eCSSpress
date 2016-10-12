@@ -1,0 +1,38 @@
+$gutter: 2%;
+$numbCol: 12;
+$widthOne: (100% - $gutter * ($numbCol - 1)) / $numbCol;
+
+@mixin grid-col($cols) {
+    box-sizing: border-box;
+    width: $widthOne * $cols + ($cols - 1) * $gutter;
+    margin-left: $gutter;
+
+    &:first-of-type {
+        margin-left: 0;
+    }
+}
+
+@mixin grid-offset($cols) {
+    margin-left: $widthOne * $cols + ($cols + 1) * $gutter;
+
+    &:first-of-type {
+        margin-left: $widthOne * $cols + $cols * $gutter;
+    }
+}
+
+@for $cols from 1 through $numbCol {
+    .span-#{$cols} {
+        @include grid-col($cols);
+    }
+}
+
+@for $cols from 1 through $numbCol {
+    .offset-#{$cols} {
+        @include grid-offset($cols);
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
