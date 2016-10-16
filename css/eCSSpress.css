@@ -284,7 +284,8 @@ blockquote:before {
   font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.25em;
-  vertical-align: -0.4em; }
+  vertical-align: -0.4em;
+  padding-right: 2em; }
 
 blockquote, code, .result {
   margin-bottom: 10px;
@@ -324,7 +325,8 @@ code span:before {
   counter-increment: ligne;
   content: counter(ligne);
   margin-right: 5px;
-  padding-right: 5px; }
+  width: 2em;
+  text-align: center; }
 
 pre {
   width: 99%;
