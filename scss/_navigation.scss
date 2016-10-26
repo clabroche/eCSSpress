@@ -56,18 +56,23 @@
 
 .breadcrumb {
     @extend .ul-nodecoration;
-
+    box-sizing:border-box;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     background-color: $breadcrumbBackgroundColor;
-
+    padding: 5px;
     li {
-        margin: 0;
+        margin-right: 10px;
+        margin-left: 0;
     }
 
     li:after {
         content: ">";
+        margin-left: 10px;
+    } 
+    li:last-of-type:after{
+        content: "";
     }
 
     border: 1px solid darken($breadcrumbBackgroundColor, 20);
