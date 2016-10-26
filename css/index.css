@@ -1,150 +1,324 @@
-.span-1 {
+.span-1-flex {
   box-sizing: border-box;
   width: 6.5%;
   margin-left: 2%; }
-  .span-1:first-of-type {
+  .span-1-flex:first-of-type {
     margin-left: 0; }
 
-.span-2 {
+.span-1-float {
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 6.5%;
+  margin-left: 2%; }
+  .span-1-float:first-of-type {
+    margin-left: 0; }
+
+.span-2-flex {
   box-sizing: border-box;
   width: 15%;
   margin-left: 2%; }
-  .span-2:first-of-type {
+  .span-2-flex:first-of-type {
     margin-left: 0; }
 
-.span-3 {
+.span-2-float {
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 15%;
+  margin-left: 2%; }
+  .span-2-float:first-of-type {
+    margin-left: 0; }
+
+.span-3-flex {
   box-sizing: border-box;
   width: 23.5%;
   margin-left: 2%; }
-  .span-3:first-of-type {
+  .span-3-flex:first-of-type {
     margin-left: 0; }
 
-.span-4 {
+.span-3-float {
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 23.5%;
+  margin-left: 2%; }
+  .span-3-float:first-of-type {
+    margin-left: 0; }
+
+.span-4-flex {
   box-sizing: border-box;
   width: 32%;
   margin-left: 2%; }
-  .span-4:first-of-type {
+  .span-4-flex:first-of-type {
     margin-left: 0; }
 
-.span-5 {
+.span-4-float {
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 32%;
+  margin-left: 2%; }
+  .span-4-float:first-of-type {
+    margin-left: 0; }
+
+.span-5-flex {
   box-sizing: border-box;
   width: 40.5%;
   margin-left: 2%; }
-  .span-5:first-of-type {
+  .span-5-flex:first-of-type {
     margin-left: 0; }
 
-.span-6 {
+.span-5-float {
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 40.5%;
+  margin-left: 2%; }
+  .span-5-float:first-of-type {
+    margin-left: 0; }
+
+.span-6-flex {
   box-sizing: border-box;
   width: 49%;
   margin-left: 2%; }
-  .span-6:first-of-type {
+  .span-6-flex:first-of-type {
     margin-left: 0; }
 
-.span-7 {
+.span-6-float {
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 49%;
+  margin-left: 2%; }
+  .span-6-float:first-of-type {
+    margin-left: 0; }
+
+.span-7-flex {
   box-sizing: border-box;
   width: 57.5%;
   margin-left: 2%; }
-  .span-7:first-of-type {
+  .span-7-flex:first-of-type {
     margin-left: 0; }
 
-.span-8 {
+.span-7-float {
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 57.5%;
+  margin-left: 2%; }
+  .span-7-float:first-of-type {
+    margin-left: 0; }
+
+.span-8-flex {
   box-sizing: border-box;
   width: 66%;
   margin-left: 2%; }
-  .span-8:first-of-type {
+  .span-8-flex:first-of-type {
     margin-left: 0; }
 
-.span-9 {
+.span-8-float {
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 66%;
+  margin-left: 2%; }
+  .span-8-float:first-of-type {
+    margin-left: 0; }
+
+.span-9-flex {
   box-sizing: border-box;
   width: 74.5%;
   margin-left: 2%; }
-  .span-9:first-of-type {
+  .span-9-flex:first-of-type {
     margin-left: 0; }
 
-.span-10 {
+.span-9-float {
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 74.5%;
+  margin-left: 2%; }
+  .span-9-float:first-of-type {
+    margin-left: 0; }
+
+.span-10-flex {
   box-sizing: border-box;
   width: 83%;
   margin-left: 2%; }
-  .span-10:first-of-type {
+  .span-10-flex:first-of-type {
     margin-left: 0; }
 
-.span-11 {
+.span-10-float {
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 83%;
+  margin-left: 2%; }
+  .span-10-float:first-of-type {
+    margin-left: 0; }
+
+.span-11-flex {
   box-sizing: border-box;
   width: 91.5%;
   margin-left: 2%; }
-  .span-11:first-of-type {
+  .span-11-flex:first-of-type {
     margin-left: 0; }
 
-.span-12 {
+.span-11-float {
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 91.5%;
+  margin-left: 2%; }
+  .span-11-float:first-of-type {
+    margin-left: 0; }
+
+.span-12-flex {
   box-sizing: border-box;
   width: 100%;
   margin-left: 2%; }
-  .span-12:first-of-type {
+  .span-12-flex:first-of-type {
     margin-left: 0; }
 
-.offset-1 {
+.span-12-float {
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: 2%; }
+  .span-12-float:first-of-type {
+    margin-left: 0; }
+
+.offset-1-flex {
   margin-left: 10.5%; }
-  .offset-1:first-of-type {
+  .offset-1-flex:first-of-type {
     margin-left: 8.5%; }
 
-.offset-2 {
+.offset-1-float {
+  margin-left: 10.5%; }
+  .offset-1-float:first-of-type {
+    margin-left: 8.5%; }
+
+.offset-2-flex {
   margin-left: 19%; }
-  .offset-2:first-of-type {
+  .offset-2-flex:first-of-type {
     margin-left: 17%; }
 
-.offset-3 {
+.offset-2-float {
+  margin-left: 19%; }
+  .offset-2-float:first-of-type {
+    margin-left: 17%; }
+
+.offset-3-flex {
   margin-left: 27.5%; }
-  .offset-3:first-of-type {
+  .offset-3-flex:first-of-type {
     margin-left: 25.5%; }
 
-.offset-4 {
+.offset-3-float {
+  margin-left: 27.5%; }
+  .offset-3-float:first-of-type {
+    margin-left: 25.5%; }
+
+.offset-4-flex {
   margin-left: 36%; }
-  .offset-4:first-of-type {
+  .offset-4-flex:first-of-type {
     margin-left: 34%; }
 
-.offset-5 {
+.offset-4-float {
+  margin-left: 36%; }
+  .offset-4-float:first-of-type {
+    margin-left: 34%; }
+
+.offset-5-flex {
   margin-left: 44.5%; }
-  .offset-5:first-of-type {
+  .offset-5-flex:first-of-type {
     margin-left: 42.5%; }
 
-.offset-6 {
+.offset-5-float {
+  margin-left: 44.5%; }
+  .offset-5-float:first-of-type {
+    margin-left: 42.5%; }
+
+.offset-6-flex {
   margin-left: 53%; }
-  .offset-6:first-of-type {
+  .offset-6-flex:first-of-type {
     margin-left: 51%; }
 
-.offset-7 {
+.offset-6-float {
+  margin-left: 53%; }
+  .offset-6-float:first-of-type {
+    margin-left: 51%; }
+
+.offset-7-flex {
   margin-left: 61.5%; }
-  .offset-7:first-of-type {
+  .offset-7-flex:first-of-type {
     margin-left: 59.5%; }
 
-.offset-8 {
+.offset-7-float {
+  margin-left: 61.5%; }
+  .offset-7-float:first-of-type {
+    margin-left: 59.5%; }
+
+.offset-8-flex {
   margin-left: 70%; }
-  .offset-8:first-of-type {
+  .offset-8-flex:first-of-type {
     margin-left: 68%; }
 
-.offset-9 {
+.offset-8-float {
+  margin-left: 70%; }
+  .offset-8-float:first-of-type {
+    margin-left: 68%; }
+
+.offset-9-flex {
   margin-left: 78.5%; }
-  .offset-9:first-of-type {
+  .offset-9-flex:first-of-type {
     margin-left: 76.5%; }
 
-.offset-10 {
+.offset-9-float {
+  margin-left: 78.5%; }
+  .offset-9-float:first-of-type {
+    margin-left: 76.5%; }
+
+.offset-10-flex {
   margin-left: 87%; }
-  .offset-10:first-of-type {
+  .offset-10-flex:first-of-type {
     margin-left: 85%; }
 
-.offset-11 {
+.offset-10-float {
+  margin-left: 87%; }
+  .offset-10-float:first-of-type {
+    margin-left: 85%; }
+
+.offset-11-flex {
   margin-left: 95.5%; }
-  .offset-11:first-of-type {
+  .offset-11-flex:first-of-type {
     margin-left: 93.5%; }
 
-.offset-12 {
+.offset-11-float {
+  margin-left: 95.5%; }
+  .offset-11-float:first-of-type {
+    margin-left: 93.5%; }
+
+.offset-12-flex {
   margin-left: 104%; }
-  .offset-12:first-of-type {
+  .offset-12-flex:first-of-type {
     margin-left: 102%; }
 
-.row {
+.offset-12-float {
+  margin-left: 104%; }
+  .offset-12-float:first-of-type {
+    margin-left: 102%; }
+
+.row-flex {
   display: flex;
   flex-direction: row; }
+
+.row-float {
+  display: inline-block;
+  clear: both;
+  width: 100%;
+  margin: 0; }
 
 #container {
   margin: 0 auto;
@@ -152,56 +326,5 @@
 
 section {
   margin-bottom: 100px; }
-
-.row {
-  background-color: #D5D5D5; }
-
-.span-1 {
-  background-color: grey;
-  color: white; }
-
-.span-2 {
-  background-color: grey;
-  color: white; }
-
-.span-3 {
-  background-color: grey;
-  color: white; }
-
-.span-4 {
-  background-color: grey;
-  color: white; }
-
-.span-5 {
-  background-color: grey;
-  color: white; }
-
-.span-6 {
-  background-color: grey;
-  color: white; }
-
-.span-7 {
-  background-color: grey;
-  color: white; }
-
-.span-8 {
-  background-color: grey;
-  color: white; }
-
-.span-9 {
-  background-color: grey;
-  color: white; }
-
-.span-10 {
-  background-color: grey;
-  color: white; }
-
-.span-11 {
-  background-color: grey;
-  color: white; }
-
-.span-12 {
-  background-color: grey;
-  color: white; }
 
 /*# sourceMappingURL=index.css.map */

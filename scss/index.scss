@@ -1,5 +1,6 @@
 @import "grid";
 
+
 $defaultLightBackgroundColor:#D5D5D5;
 
 #container{
@@ -16,13 +17,3 @@ section{
 
 
 
-
-.row{
-	background-color: $defaultLightBackgroundColor;
-}
-@for $cols from 1 through $numbCol {
-	.span-#{$cols} {
-		background-color: grey;
-		color: white;
-	}
-}

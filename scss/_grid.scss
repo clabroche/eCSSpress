@@ -1,38 +1,31 @@
-$gutter: 2%;
-$numbCol: 12;
-$widthOne: (100% - $gutter * ($numbCol - 1)) / $numbCol;
+@import "mixins/grid";
 
-@mixin grid-col($cols) {
-    box-sizing: border-box;
-    width: $widthOne * $cols + ($cols - 1) * $gutter;
-    margin-left: $gutter;
-
-    &:first-of-type {
-        margin-left: 0;
-    }
-}
-
-@mixin grid-offset($cols) {
-    margin-left: $widthOne * $cols + ($cols + 1) * $gutter;
-
-    &:first-of-type {
-        margin-left: $widthOne * $cols + $cols * $gutter;
-    }
-}
 
 @for $cols from 1 through $numbCol {
-    .span-#{$cols} {
-        @include grid-col($cols);
+    .span-#{$cols}-flex{
+        @include make-col-flex($cols);
+    }
+    .span-#{$cols}-float{
+        @include make-col-float($cols);
     }
 }
-
 @for $cols from 1 through $numbCol {
-    .offset-#{$cols} {
-        @include grid-offset($cols);
+    .offset-#{$cols}-flex{
+        @include make-offset-flex($cols);
+    }
+    .offset-#{$cols}-float{
+        @include make-offset-float($cols);
     }
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
+.row-flex{
+    @include make-row-flex();
 }
+
+
+
+.row-float{
+    @include make-row-float();
+}
+
+
