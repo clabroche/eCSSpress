@@ -48,10 +48,8 @@ $widthOne: (100% - $gutter * ($numbCol - 1)) / $numbCol;
 
 
 @mixin make-row-float() {
-    display: inline-block;
+    display: table;
     clear: both;
     width: 100%;
     margin: 0;
 }
-
-
