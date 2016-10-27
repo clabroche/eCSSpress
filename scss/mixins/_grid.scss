@@ -1,4 +1,3 @@
-@import "variables";
 $widthOne: (100% - $gutter * ($numbCol - 1)) / $numbCol;
 @mixin make-col-flex($cols) {
     box-sizing: border-box;

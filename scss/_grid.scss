@@ -1,5 +1,3 @@
-@import "mixins/grid";
-
 
 @for $cols from 1 through $numbCol {
     .span-#{$cols}-flex{
@@ -27,5 +25,3 @@
 .row-float{
     @include make-row-float();
 }
-
-

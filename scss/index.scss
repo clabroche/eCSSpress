@@ -1,4 +1,10 @@
+@import "variables";
+@import "mixins";
 @import "grid";
+
+
+
+
 
 
 $defaultLightBackgroundColor:#D5D5D5;
@@ -16,4 +22,12 @@ section{
 }
 
 
-
+.row-float, .row-flex{
+	background-color: $defaultLightBackgroundColor;
+}
+@for $cols from 1 through $numbCol {
+	.span-#{$cols}-flex, .span-#{$cols}-float {
+		background-color: grey;
+		color: white;
+	}
+}

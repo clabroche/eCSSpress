@@ -1,6 +1,9 @@
 @import "reset";
 @import "colors";
 @import "variables";
+
+@import "mixins";
+
 @import "size";
 @import "grid";
 @import "typos";
@@ -10,14 +13,3 @@
 @import "buttons";
 @import "components";
 @import "navigation";
-
-
-.row-float, .row-flex{
-	background-color: $defaultLightBackgroundColor;
-}
-@for $cols from 1 through $numbCol {
-	.span-#{$cols}-flex, .span-#{$cols}-float {
-		background-color: grey;
-		color: white;
-	}
-}
