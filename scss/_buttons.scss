@@ -1,42 +1,33 @@
 
+/*Buttons Color*/
+.btn{@include colorizeButton($buttonNormalBackground,$buttonNormalColor);}
+.btn-red{@include colorizeButton($buttonRedBackground,$buttonRedColor);}
+.btn-yellow{@include colorizeButton($buttonYellowBackground,$buttonYellowColor);}
+.btn-green{@include colorizeButton($buttonGreenBackground,$buttonGreenColor);}
+.btn-blue{@include colorizeButton($buttonBlueBackground,$buttonBlueColor);}
+
+
+
 /*Buttons Size*/
-.btn{
-	@include colorizeButton($buttonDefault);
-	color: black;
-	line-height: 2em;
-	font-size: 1em;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-radius: 5px;
-	border: 1px solid #bbb;
-	display: inline-block;
-	cursor: pointer;
-}
 .btn-sm{
-	font-size: 0.8em;
-	line-height: 1.8em;
-	padding-left: 5px;
-	padding-right: 5px;
+	font-size: $btn-sm-size;
+	line-height: $btn-sm-lineHeight;
+	padding-left: $btn-sm-paddingLeft;
+	padding-right: $btn-sm-paddingRight;
 }
 .btn-lg{
-	font-size: 1.2em;
-	line-height: 2.2em;
-	padding-left: 15px;
-	padding-right: 15px;
+	font-size:$btn-lg-size;
+	line-height:$btn-lg-lineHeight;
+	padding-left:$btn-lg-paddingLeft;
+	padding-right:$btn-lg-paddingRight;
 }
 
 .btn-x-lg{
-	width: 100%;
+	width: $btn-x-lg-width;
 }
 
 
-
-/*Buttons Color*/
-.btn-red{@include colorizeButton($buttonRed);}
-.btn-yellow{@include colorizeButton($buttonYellow);}
-.btn-green{@include colorizeButton($buttonGreen);}
-.btn-blue{@include colorizeButton($buttonBlue);}
-
+/*Buttons Style*/
 .btn-flat{
 	border: none;
 	border-radius: 0px;

@@ -1,2 +1,78 @@
 $gutter: 2%;
 $numbCol: 12;
+
+
+
+
+/*======================================*/
+/*=              Colors                =*/
+/*======================================*/
+
+/*Default color*/
+$red:#c81111!default;
+$yellow:#c9c817!default;
+$green:#2FA242!default;
+$blue:#3A49C1!default;
+$lightgrey:#eeeeee!default;
+$white:#ffffff !default;
+$black:#000000 !default;
+$grey: #797979 !default;
+
+$defaultLightBackgroundColor:#E5E5E5 !default;
+
+
+/*======================================*/
+/*=              Buttons               =*/
+/*======================================*/
+
+/*Color*/
+$buttonNormalBackground:#F0F0F0 !default;
+$buttonNormalColor:$black !default;
+
+$buttonRedBackground:$red !default;
+$buttonRedColor:$white !default;
+
+$buttonGreenBackground:$green !default;
+$buttonGreenColor:$white !default;
+
+$buttonBlueBackground:$blue !default;
+$buttonBlueColor:$white !default;
+
+$buttonLightGreyBackground:$lightgrey !default;
+$buttonLightGreyColor:$white !default;
+
+$buttonYellowBackground:$yellow !default;
+$buttonYellowColor:$white !default;
+
+
+/*Size*/
+$btn-sm-size:0.8em;
+$btn-sm-lineHeight:1.8em;
+$btn-sm-paddingLeft:5px;
+$btn-sm-paddingRight:5px;
+
+$btn-lg-size:1.2em;
+$btn-lg-lineHeight:2.2em;
+$btn-lg-paddingLeft: 15px;
+$btn-lg-paddingRight: 15px;
+
+$btn-x-lg-width:100%;
+
+
+
+
+
+/*======================================*/
+/*=              Navigation            =*/
+/*======================================*/
+
+/*Navbar*/
+$navbarBackgroundColor: $defaultLightBackgroundColor !default;
+$navbarColor: #000000 !default;
+
+/*Breadcrumb*/
+$breadcrumbBackgroundColor:$defaultLightBackgroundColor !default;
+$breadcrumbColor: #404040 !default;
+
+/*Paginition*/
+$paginationBackground:$defaultLightBackgroundColor !default;
