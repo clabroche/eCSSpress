@@ -81,6 +81,10 @@ div, span {
 /*Navbar*/
 /*Breadcrumb*/
 /*Paginition*/
+/*======================================*/
+/*=              Tables                =*/
+/*======================================*/
+/*Table*/
 .span-1-flex {
   box-sizing: border-box;
   width: 6.5%;
@@ -576,23 +580,24 @@ ul li {
 
 .table {
   border-collapse: collapse;
-  width: 100%; }
-
-.table td, .table th {
-  padding: 8px; }
-
-.table th {
-  font-weight: bold; }
+  width: 100%;
+  margin: auto; }
+  .table td, .table th {
+    padding: 8px; }
+  .table th {
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffffff; }
 
 .table-solid td, .table-solid th {
-  border: 1px solid #000; }
+  border: 1px solid #000000; }
 
 .table-alt tr:nth-child(even) {
-  background-color: #dddddd; }
+  background-color: #eeeeee; }
 
 .table-hover tr:hover {
   background-color: #3B95FF;
-  color: white; }
+  color: #ffffff; }
 
 /*Buttons Color*/
 .btn {
