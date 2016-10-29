@@ -1,5 +1,5 @@
 ul li {
-    margin-left: 2em;
+    margin-left: $listMargin;
     display: list-item;
     list-style-type: disc;
 }
