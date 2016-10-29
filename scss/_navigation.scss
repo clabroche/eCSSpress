@@ -1,0 +1,102 @@
+.navbar {
+    @extend .ul-nodecoration;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: $navbarBackgroundColor;
+    width: 100%;
+    min-height: $navbarHeight;
+    line-height: $navbarHeight;
+
+    li {
+        padding-left: $navbarPadding;
+        padding-right: $navbarPadding;
+        margin: 0;
+        border-bottom: 1px solid darken($navbarBackgroundColor, 20);
+        text-align: center;
+
+        &:hover {
+            background-color: darken($navbarBackgroundColor, 20);
+        }
+    }
+
+    .disabled {
+        display: none;
+    }
+
+    .active {
+        border-left: solid $navbarActive darken($navbarBackgroundColor, 50);
+    }
+
+    a {
+        text-decoration: none;
+        color: $navbarColor;
+    }
+
+    @media screen and (min-width: $navbarMedium) {
+        flex-direction: row;
+        justify-content: space-around;
+
+        li {
+            border-bottom: none;
+        }
+
+        .active {
+            border-bottom: solid $navbarActive darken($navbarBackgroundColor, 50);
+            border-left: none;
+        }
+
+        @media screen and (min-width: $navbarLarge) {
+            justify-content: flex-end;
+        }
+    }
+}
+
+.breadcrumb {
+    @extend .ul-nodecoration;
+    box-sizing:border-box;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: $breadcrumbBackgroundColor;
+    padding: $breadcrumbPadding;
+    li {
+        margin-right: $breadcrumbMargin;
+        margin-left: 0;
+    }
+
+    li:after {
+        content: $breadcrumbContent;
+        margin-left: $breadcrumbMargin;
+    }
+    li:last-of-type:after{
+        content: "";
+    }
+
+    border: 1px solid darken($breadcrumbBackgroundColor, 20);
+    color: $breadcrumbColor;
+}
+
+.pagination {
+    @extend .ul-nodecoration;
+
+    vertical-align: top;
+    display: inline-flex;
+
+    li {
+        padding: $paginationPadding;
+        margin: 0;
+        background-color: $paginationBackground;
+
+        &:hover {
+            background-color: darken($paginationBackground, 10);
+        }
+    }
+
+    .active {
+        background-color: darken($paginationBackground, 20);
+        color: lighten($paginationBackground, 20);
+    }
+}

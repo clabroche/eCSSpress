@@ -1,70 +1,38 @@
 
+/*Buttons Color*/
+.btn{@include colorizeButton($buttonNormalBackground,$buttonNormalColor);}
+.btn-red{@include colorizeButton($buttonRedBackground,$buttonRedColor);}
+.btn-yellow{@include colorizeButton($buttonYellowBackground,$buttonYellowColor);}
+.btn-green{@include colorizeButton($buttonGreenBackground,$buttonGreenColor);}
+.btn-blue{@include colorizeButton($buttonBlueBackground,$buttonBlueColor);}
 
-.btn{
-	line-height: 2em;
-	font-size: 1em;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-radius: 5px;
-	border: 1px solid #bbb;
-	color: #303030;
-	display: inline-block;
-	cursor: pointer;
-	background-color: #eeeeee;
-}
 
-.btn:hover, .btn:focus{
-	background-color: rgb(220,220,220);
-}
-.btn:active{
-	background-color: rgb(200,200,200);
-}
 
+/*Buttons Size*/
 .btn-sm{
-	font-size: 0.8em;
-	line-height: 1.8em;
-	padding-left: 5px;
-	padding-right: 5px;
+	font-size: $btn-sm-size;
+	line-height: $btn-sm-lineHeight;
+	padding-left: $btn-sm-paddingLeft;
+	padding-right: $btn-sm-paddingRight;
 }
 .btn-lg{
-	font-size: 1.2em;
-	line-height: 2.2em;
-	padding-left: 15px;
-	padding-right: 15px;
+	font-size:$btn-lg-size;
+	line-height:$btn-lg-lineHeight;
+	padding-left:$btn-lg-paddingLeft;
+	padding-right:$btn-lg-paddingRight;
 }
 
-.btn-red{
-	border: 1px solid rgb(180,0,0);
-	background-color: rgb(230,0,0);
-	color: #fff;
+.btn-x-lg{
+	width: $btn-x-lg-width;
 }
-.btn-red:hover,.btn-red:focus{background-color: rgb(200,0,0);}
-.btn-red:active{background-color: rgb(180,0,0);}
 
-.btn-green{
-	border: 1px solid rgb(0,149,32);
-	background-color:rgb(0,179,32);
-	color: #fff;
-}
-.btn-green:hover,.btn-green:focus{background-color:rgb(0,159,32);}
-.btn-green:active{background-color:rgb(0,149,32);}
 
-.btn-blue{
-	border: 1px solid rgb(65,85,160);
-	background-color:rgb(65,85,222);
-	color: #fff;
-}
-.btn-blue:hover,.btn-blue:focus{background-color:rgb(65,85,180);}
-.btn-blue:active{background-color:rgb(65,85,160);}
-
+/*Buttons Style*/
 .btn-flat{
 	border: none;
 	border-radius: 0px;
 }
 
-.btn-x-lg{
-	width: 100%;
-}
 .btn-fancy{
 	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 	background-image: -webkit-linear-gradient(top,rgba(0,0,0,0.1),rgba(0,0,0,0.4));

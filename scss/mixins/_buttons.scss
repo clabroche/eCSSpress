@@ -1,0 +1,21 @@
+@mixin colorizeButton($backgroundColor,$color) {
+    display: inline-block;
+    
+    background-color: $backgroundColor;
+    color:$color;
+
+  	line-height: 2em;
+  	font-size: 1em;
+
+  	padding-left: 10px;
+  	padding-right: 10px;
+
+
+    border: 1px solid darken($backgroundColor,6);
+  	border-radius: 5px;
+
+  	cursor: pointer;
+
+    &:hover,&:focus {background-color: darken($backgroundColor,5);}
+    &:active{background-color: darken($backgroundColor,10);}
+}

@@ -1,0 +1,31 @@
+.header{
+	display: flex;
+	align-items: flex-end;
+	width: 100%;
+	background-color: $headerBg;
+	padding-top: $headerPaddingTopBottom;
+	padding-bottom: $headerPaddingTopBottom;
+	padding-left: $headerPaddingLeftRight;
+	padding-right: $headerPaddingLeftRight;
+	color: $headerColor;
+	small{
+		margin-left: 5px;
+		color: $headerSmallColor;
+	}
+}
+
+
+.jumbotron{
+	width: 100%;
+	background-color: $jumbotronBg;
+	padding-top: $jumbotronPaddingTopBottom;
+	padding-bottom: $jumbotronPaddingTopBottom;
+	padding-left: $jumbotronPaddingLeftRight;
+	padding-right: $jumbotronPaddingLeftRight;
+	h1{
+		margin-bottom: 20px;
+	}
+	button{
+		margin-top: 20px;
+	}
+}

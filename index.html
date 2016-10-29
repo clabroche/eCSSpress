@@ -1,26 +1,21 @@
 <!DOCTYPE html>
-<html>
-  <head lang="fr">
+<html lang="fr">
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>exercice typographie</title>
     <meta name="description" content="quelques exercices de base pour se mettre en jambe">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/eCSSpress.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
-    <div class="navLateral">
-      <div id="navLogo">eCSSpress</div>
-      <ul>
-        <li><a href="#titres">Les titres</a></li>
-        <li><a href="#sousTitre">Les sous-titres</a></li>
-        <li><a href="#inline">Les balises inline</a></li>
+      <ul class="navbar">
+        <li><a href="index.html">Documentation</a></li>
+        <li><a href="download.html">Téléchargements</a></li>
       </ul>
-    </div>
     <div id="container">
       <div id="subContainer">
-        <div id="debut"></div>
         <section id="titres">
           <h1>Les titres</h1>
           <p>La font-stack choisi est Arial car elle est présente sur la plupart des systemes</p>
@@ -31,28 +26,28 @@
           <span>&lt;h4>h4. Titre h4&lt;/h4></span>
           <span>&lt;h5>h5. Titre h5&lt;/h5></span>
           <span>&lt;h6>h6. Titre h6&lt;/h6></span>
-          <span class="result">
+          </code>
+          <div class="result">
             <h1>h1. Titre h1</h1>
             <h2>h2. Titre h2</h2>
             <h3>h3. Titre h3</h3>
             <h4>h3. Titre h4</h4>
             <h5>h3. Titre h5</h5>
             <h6>h3. Titre h6</h6>
-          </span>
-          </code>
+          </div>
         </section>
         <section id="sousTitre">
           <h1>Les sous-titres</h1>
           Pour ajouter des sous titres à un titre on peut faire:
           <code>
           <span>&lt;h1>Titre,&lt;small>Sous-titre&lt;/small>&lt;/h1></span>
-          <span class="result"><h1>Titre,<small>Sous-titre</small></h1></span>
           </code>
+          <div class="result"><h1>Titre,<small>Sous-titre</small></h1></div>
           Ou bien:
           <code>
           <span>&lt;h1 class="sub"> Un autre sous-titre&lt;/h1></span>
-          <span class="result"> <h1 class="sub"> Un autre sous-titre</h1></span>
           </code>
+          <div class="result"> <h1 class="sub"> Un autre sous-titre</h1></div>
         </section>
         <section id="inline">
           <h1>Les balises inline</h1>
@@ -65,7 +60,8 @@
           <span>&lt;strong>strong&lt;/strong></span>
           <span>&lt;em>em&lt;/em></span>
           <span>&lt;abbr title='United States'>US&lt;/abbr></span>
-          <span class="result">
+          </code>
+          <div class="result">
             <mark>Mark</mark>
             <del>Del</del>
             <ins>Ins</ins>
@@ -73,103 +69,600 @@
             <strong>strong</strong>
             <em>em</em>
           <abbr title='United States'>US</abbr>
-        </span>
-        </code>
+        </div>
       </section>
-      <blockquote>Ceci est une citation<div class="author">Corentin Labroche</div></blockquote>
-      <code>
-      <span>sudo pacman-db-upgrade&&sudo pacman -Syu && sudo pacman -S vlc</span>
-      <span>sudo pacman-db-upgrade&&sudo pacman -Syu && sudo pacman -S vlc</span>
-      </code>
-            <pre>Lorem ipsum Ullamco in labore elit velit laboris ea eiusmod eu consequat sed id est aliquip deserunt veniam ullamco exercitation magna do eiusmod in eu enim aute veniam velit eiusmod incididunt ea sit nostrud fugia
-                t et eiusmod occaecat quis in nulla Duis consectetur pariatur aliqua sunt fugiat dolore consequat aliqua magna id reprehenderit deserunt cillum adipisicing Excepteur laborum ad et proident exercitation dolore in eiusmod dolor anim elit sunt dolor tempor ullamco officia ad nostrud mollit magna commodo esse eiusmod incididunt labore sunt nisi pariatur ullamco sed ullamco dolor ullamco m
-                agna in nostrud sint in dolore dolore ullamco consequat do consectetur dolor tempor consectetur nostrud sed officia amet tempor dolor reprehenderit am
-      et culpa labore dolore cupidatat cillum deserunt aute nostrud in ut in et nisi voluptate Excepteur commodo ut commodo aute anim ut sunt anim irure quis eu non reprehenderit elit minim et deserunt proident Ut dolor Excepteur cillum qui tempor consequat proident veniam consectetur voluptate est enim laboris et ut non sunt occaecat minim minim do aliqua.</pre>
-      aaaaaaaaaaaaaaaaaaaaaaaaaaapppppppppppp<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Suppr</kbd>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-      </ul>
-      <ul class="ul-square">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-      </ul>
-      <ul class="ul-nodecoration">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-      </ul>
-      <p class="uppercase">uppercase</p>
-      <p class="lowercase">LOWERCASE</p>
-      <p class="justify">justify Lorem ipsum Dolore enim quis amet ea in ex esse irure incididunt ea nisi veniam sunt aliqua culpa. Lorem ipsum Dolor tempor irure aliquip exercitation veniam qui dolore qui qui magna in voluptate nulla.
-      Lorem ipsum Duis do aute consequat ullamco et dolore occaecat ex occaecat do nostrud enim deserunt nulla ex id proident magna.</p>
-      <p class="align-left">align left</p>
-      <p class="align-right">align right</p>
-      <p class="align-center">align center</p>
-      <table class="table table-solid table-alt table-hover">
-        <tr>
-          <th>Company</th>
-          <th>Contact</th>
-          <th>Country</th>
-        </tr>
-        <tr>
-          <td>Alfreds Futterkiste</td>
-          <td>Maria Anders</td>
-          <td>Germany</td>
-        </tr>
-        <tr>
-          <td>Centro comercial Moctezuma</td>
-          <td>Francisco Chang</td>
-          <td>Mexico</td>
-        </tr>
-        <tr>
-          <td>Ernst Handel</td>
-          <td>Roland Mendel</td>
-          <td>Austria</td>
-        </tr>
-        <tr>
-          <td>Island Trading</td>
-          <td>Helen Bennett</td>
-          <td>UK</td>
-        </tr>
-        <tr>
-          <td>Laughing Bacchus Winecellars</td>
-          <td>Yoshi Tannamuri</td>
-          <td>Canada</td>
-        </tr>
-        <tr>
-          <td>Magazzini Alimentari Riuniti</td>
-          <td>Giovanni Rovelli</td>
-          <td>Italy</td>
-        </tr>
-      </table>
-      <br/>
-      <br/>
-      <br/>
-      <br/><br/>
-      <br/>
-      <button class="btn btn-sm">Button small</button><button class="btn">Button</button><button class="btn btn-lg">Button large</button>
-      <br/>
-      <button class="btn btn-red">Red Button</button>
-      <button class="btn btn-green">Green Button</button>
-      <button class="btn btn-blue">Blue Button</button>
-      <br/>
-      <button class="btn btn-blue btn-flat">Blue Button Flat</button>
-      <button class="btn btn-blue btn-x-lg">Blue Button Extra large</button>
-      <button class="btn btn-blue btn-fancy">Blue Button Fancy</button>
-      <br/>
-      <br/>
-      <br/>
-      <br/><br/>
-      <br/>
+      <section id="citations">
+        <h1>Les citations</h1>
+        <code>
+        <span>&lt;blockquote>Ceci est une citation&lt;div class="author">Corentin Labroche&lt;/div>&lt;/blockquote></span>
+        </code>
+        <div class="result"><blockquote>Ceci est une citation<div class="author">Corentin Labroche</div></blockquote></div>
+      </section>
+      <section id="codes">
+        <h1>Les codes</h1>
+        <code>
+        <span>&lt;code></span>
+        <span>  &lt;span>sudo pacman-db-upgrade&&sudo pacman -Syu && sudo pacman -S vlc&lt;/span></span>
+        <span>  &lt;span>sudo pacman-db-upgrade&&sudo pacman -Syu && sudo pacman -S vlc&lt;/span></span>
+        <span>&lt;/code></span>
+        </code>
+        <div class="result">
+          <code>
+          <span>sudo pacman-db-upgrade&&sudo pacman -Syu && sudo pacman -S vlc</span>
+          <span>sudo pacman-db-upgrade&&sudo pacman -Syu && sudo pacman -S vlc</span>
+          </code>
+        </div>
+      </section>
+
+      <section id="pre">
+        <h1>Le texte preformaté</h1>
+        <code>
+        <span>&lt;pre>Lorem ipsum Ullamco in labore elit velit laboris ea eiusmod eu consequat sed id est aliquip deserunt veniam ullamco exercitation magna do eiusmod in eu enim aute veniam velit eiusmod incididunt ea sit nostrud fugia
+          t et eiusmod occaecat quis in nulla Duis consectetur pariatur aliqua sunt fugiat dolore consequat aliqua magna id reprehenderit deserunt cillum adipisicing Excepteur laborum ad et proident exercitation dolore in eiusmod dolor anim elit sunt dolor tempor ullamco officia ad nostrud mollit magna commodo esse eiusmod incididunt labore sunt nisi pariatur ullamco sed ullamco dolor ullamco m
+          agna in nostrud sint in dolore dolore ullamco consequat do consectetur dolor tempor consectetur nostrud sed officia amet tempor dolor reprehenderit am
+        et culpa labore dolore cupidatat cillum deserunt aute nostrud in ut in et nisi voluptate Excepteur commodo ut commodo aute anim ut sunt anim irure quis eu non reprehenderit elit minim et deserunt proident Ut dolor Excepteur cillum qui tempor consequat proident veniam consectetur voluptate est enim laboris et ut non sunt occaecat minim minim do aliqua.&lt;/pre></span>
+        </code>
+                <div class="result"><pre>Lorem ipsum Ullamco in labore elit velit laboris ea eiusmod eu consequat sed id est aliquip deserunt veniam ullamco exercitation magna do eiusmod in eu enim aute veniam velit eiusmod incididunt ea sit nostrud fugia
+                          t et eiusmod occaecat quis in nulla Duis consectetur pariatur aliqua sunt fugiat dolore consequat aliqua magna id reprehenderit deserunt cillum adipisicing Excepteur laborum ad et proident exercitation dolore in eiusmod dolor anim elit sunt dolor tempor ullamco officia ad nostrud mollit magna commodo esse eiusmod incididunt labore sunt nisi pariatur ullamco sed ullamco dolor ullamco m
+                          agna in nostrud sint in dolore dolore ullamco consequat do consectetur dolor tempor consectetur nostrud sed officia amet tempor dolor reprehenderit am
+              et culpa labore dolore cupidatat cillum deserunt aute nostrud in ut in et nisi voluptate Excepteur commodo ut commodo aute anim ut sunt anim irure quis eu non reprehenderit elit minim et deserunt proident Ut dolor Excepteur cillum qui tempor consequat proident veniam consectetur voluptate est enim laboris et ut non sunt occaecat minim minim do aliqua.</pre></div>
+            </section>
+
+
+            <section id="kbd">
+                <h1>Les touches de claviers</h1>
+                <code>
+                  <span>&lt;kbd>Ctrl&lt;/kbd>+&lt;kbd>Alt&lt;/kbd>+&lt;kbd>Suppr&lt;/kbd></span>
+                </code>
+                <div class="result"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Suppr</kbd></div>
+            </section>
+            <section id="listes">
+                <h1>Les listes</h1>
+                <h5>Listes par défaut</h5>
+                <code>
+                  <span>&lt;ul></span>
+                  <span>  &lt;li>1&lt;/li></span>
+                  <span>  &lt;li>2&lt;/li></span>
+                  <span>&lt;/ul></span>
+                </code>
+              <div class="result">
+                  <ul>
+                      <li>1</li>
+                      <li>2</li>
+                  </ul>
+              </div>
+              <h5>Listes en carré</h5>
+              <code>
+                <span>&lt;ul class="ul-square"></span>
+                  <span>  &lt;li>1&lt;/li></span>
+                  <span>  &lt;li>2&lt;/li></span>
+              <span>&lt;/ul></span>
+            </code>
+            <div class="result">
+                <ul class="ul-square">
+                    <li>1</li>
+                    <li>2</li>
+                </ul>
+            </div>
+            <h5>Listes sans puces</h5>
+            <code>
+              <span>&lt;ul class="ul-nodecoration"></span>
+                <span>  &lt;li>1&lt;/li></span>
+                <span>  &lt;li>2&lt;/li></span>
+            <span>&lt;/ul></span>
+          </code>
+          <div class="result">
+              <ul class="ul-nodecoration">
+                  <li>1</li>
+                  <li>2</li>
+              </ul>
+          </div>
+      </section>
+
+      <section id="alignements">
+          <h1>Les alignemnets et formatage des textes</h1>
+          <code>
+            <span>&lt;p class="uppercase">uppercase&lt;/p></span>
+            <span>&lt;p class="lowercase">LOWERCASE&lt;/p></span>
+            <span>&lt;p class="justify">justify Lorem ipsum Dolore enim quis amet ea in ex esse irure incididunt ea nisi veniam sunt aliqua culpa. Lorem ipsum Dolor tempor irure aliquip exercitation veniam qui dolore qui qui magna in voluptate nulla. Lorem ipsum Duis do aute consequat ullamco et dolore occaecat ex occaecat do nostrud enim deserunt nulla ex id proident magna.&lt;/p></span>
+            <span>&lt;p class="align-left">align left&lt;/p></span>
+            <span>&lt;p class="align-right">align right&lt;/p></span>
+            <span>&lt;p class="align-center">align center&lt;/p></span>
+          </code>
+          <div class="result">
+              <p class="uppercase">uppercase</p>
+              <p class="lowercase">LOWERCASE</p>
+              <p class="justify">justify Lorem ipsum Dolore enim quis amet ea in ex esse irure incididunt ea nisi veniam sunt aliqua culpa. Lorem ipsum Dolor tempor irure aliquip exercitation veniam qui dolore qui qui magna in voluptate nulla. Lorem ipsum Duis do aute consequat ullamco et dolore occaecat ex occaecat do nostrud enim deserunt nulla ex id proident magna.</p>
+              <p class="align-left">align left</p>
+              <p class="align-right">align right</p>
+              <p class="align-center">align center</p>
+          </div>
+      </section>
+
+      <section id="tables">
+          <h1>Les tableaux</h1>
+          <code>
+            <span>&lt;table class="table"></span>
+              <span>  &lt;tr></span>
+              <span>    &lt;th>id&lt;/th></span>
+              <span>    &lt;th>Aliment&lt;/th></span>
+              <span>    &lt;th>Categorie&lt;/th></span>
+              <span>  &lt;/tr></span>
+              <span>  &lt;tr></span>
+              <span>    &lt;td>1&lt;/td></span>
+              <span>    &lt;td>Carotte&lt;/td></span>
+              <span>    &lt;td>Légume&lt;/td></span>
+              <span>  &lt;/tr></span>
+              <span>  &lt;tr></span>
+              <span>    &lt;td>2&lt;/td></span>
+              <span>    &lt;td>Tomate&lt;/td></span>
+              <span>    &lt;td>Fruit&lt;/td></span>
+              <span>  &lt;/tr></span>
+            <span>&lt;/table></span>
+          </code>
+          <div class="result">
+              <table class="table">
+                  <tr>
+                      <th>id</th>
+                      <th>Aliment</th>
+                      <th>Categorie</th>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>Carotte</td>
+                      <td>Légume</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Tomate</td>
+                      <td>Fruit</td>
+                  </tr>
+              </table>
+          </div>
+          <code>
+            <span>&lt;table class="table table-solid"></span>
+              <span>  &lt;tr></span>
+              <span>    &lt;th>id&lt;/th></span>
+              <span>    &lt;th>Aliment&lt;/th></span>
+              <span>    &lt;th>Categorie&lt;/th></span>
+              <span>  &lt;/tr></span>
+              <span>  &lt;tr></span>
+              <span>    &lt;td>1&lt;/td></span>
+              <span>    &lt;td>Carotte&lt;/td></span>
+              <span>    &lt;td>Légume&lt;/td></span>
+              <span>  &lt;/tr></span>
+              <span>  &lt;tr></span>
+              <span>    &lt;td>2&lt;/td></span>
+              <span>    &lt;td>Tomate&lt;/td></span>
+              <span>    &lt;td>Fruit&lt;/td></span>
+              <span>  &lt;/tr></span>
+            <span>&lt;/table></span>
+          </code>
+          <div class="result">
+              <table class="table table-solid">
+                  <tr>
+                      <th>id</th>
+                      <th>Aliment</th>
+                      <th>Categorie</th>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>Carotte</td>
+                      <td>Légume</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Tomate</td>
+                      <td>Fruit</td>
+                  </tr>
+              </table>
+          </div>
+          <code>
+            <span>&lt;table class="table table-solid table-alt"></span>
+              <span>  &lt;tr></span>
+              <span>    &lt;th>id&lt;/th></span>
+              <span>    &lt;th>Aliment&lt;/th></span>
+              <span>    &lt;th>Categorie&lt;/th></span>
+              <span>  &lt;/tr></span>
+              <span>  &lt;tr></span>
+              <span>    &lt;td>1&lt;/td></span>
+              <span>    &lt;td>Carotte&lt;/td></span>
+              <span>    &lt;td>Légume&lt;/td></span>
+              <span>  &lt;/tr></span>
+              <span>  &lt;tr></span>
+              <span>    &lt;td>2&lt;/td></span>
+              <span>    &lt;td>Tomate&lt;/td></span>
+              <span>    &lt;td>Fruit&lt;/td></span>
+              <span>  &lt;/tr></span>
+            <span>&lt;/table></span>
+          </code>
+          <div class="result">
+              <table class="table table-solid table-alt">
+                  <tr>
+                      <th>id</th>
+                      <th>Aliment</th>
+                      <th>Categorie</th>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>Carotte</td>
+                      <td>Légume</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Tomate</td>
+                      <td>Fruit</td>
+                  </tr>
+              </table>
+          </div>
+        <code>
+            <span>&lt;table class="table table-solid table-alt table-hover"></span>
+              <span>  &lt;tr></span>
+              <span>    &lt;th>id&lt;/th></span>
+              <span>    &lt;th>Aliment&lt;/th></span>
+              <span>    &lt;th>Categorie&lt;/th></span>
+              <span>  &lt;/tr></span>
+              <span>  &lt;tr></span>
+              <span>    &lt;td>1&lt;/td></span>
+              <span>    &lt;td>Carotte&lt;/td></span>
+              <span>    &lt;td>Légume&lt;/td></span>
+              <span>  &lt;/tr></span>
+              <span>  &lt;tr></span>
+              <span>    &lt;td>2&lt;/td></span>
+              <span>    &lt;td>Tomate&lt;/td></span>
+              <span>    &lt;td>Fruit&lt;/td></span>
+              <span>  &lt;/tr></span>
+            <span>&lt;/table></span>
+          </code>
+          <div class="result">
+              <table class="table table-solid table-alt table-hover">
+                  <tr>
+                      <th>id</th>
+                      <th>Aliment</th>
+                      <th>Categorie</th>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>Carotte</td>
+                      <td>Légume</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Tomate</td>
+                      <td>Fruit</td>
+                  </tr>
+              </table>
+          </div>
+
+      </section>
+
+      <section id="buttons">
+          <h1>Les boutons</h1>
+          <code>
+            <span>&lt;button class="btn btn-sm">Button small&lt;/button></span>
+            <span>&lt;button class="btn">Button&lt;/button></span>
+            <span>&lt;button class="btn btn-lg">Button large&lt;/button></span>
+          </code>
+          <div class="result">
+              <button class="btn btn-sm">Button small</button>
+              <button class="btn">Button</button>
+              <button class="btn btn-lg">Button large</button>
+          </div>
+          <code>
+            <span>&lt;button class="btn btn-red">Red Button&lt;/button></span>
+            <span>&lt;button class="btn btn-green">Green Button&lt;/button></span>
+            <span>&lt;button class="btn btn-blue">Blue Button&lt;/button></span>
+            <span>&lt;button class="btn btn-yellow">Yellow Button&lt;/button></span>
+          </code>
+          <div class="result">
+              <button class="btn btn-red">Red Button</button>
+              <button class="btn btn-green">Green Button</button>
+              <button class="btn btn-blue">Blue Button</button>
+              <button class="btn btn-yellow">Yellow Button</button>
+          </div>
+          <code>
+              <span>&lt;button class="btn btn-green btn-x-lg">Blue Button Extra large&lt;/button></span>
+              <span>&lt;button class="btn btn-green btn-flat">Blue Button Flat&lt;/button></span>
+              <span>&lt;button class="btn btn-green btn-fancy">Blue Button Fancy&lt;/button></span>
+          </code>
+          <div class="result">
+              <button class="btn btn-green btn-x-lg">Blue Button Extra large</button>
+              <button class="btn btn-green btn-flat">Blue Button Flat</button>
+              <button class="btn btn-green btn-fancy">Blue Button Fancy</button>
+          </div>
+      </section>
+
+
+      <section id="headers">
+          <h1>Les headers</h1>
+          <code>
+            <span>&lt;div class="header"></span>
+            <span>  &lt;h1></span>
+            <span>    Header</span>
+            <span>    &lt;small>Sous-titre&lt;/small></span>
+            <span>  &lt;/h1></span>
+            <span>&lt;/div></span>
+            </code>
+            <div class="result">
+                <div class="header">
+                    <h1>
+                      Header
+                      <small>Sous-titre</small>
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <section id="Jumbotrons">
+            <h1>Les Jumbotrons</h1>
+            <code>
+              <span>&lt;div class="jumbotron"></span>
+                <span>&lt;h1>Jumbotron&lt;/h1></span>
+                <span>&lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p></span>
+                <span>&lt;button class="btn btn-lg">Bouton&lt;/button></span>
+              <span>&lt;/div></span>
+            </code>
+            <div class="result">
+                <div class="jumbotron">
+                    <h1>Jumbotron</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <button class="btn btn-lg">Bouton</button>
+                </div>
+            </div>
+        </section>
+        <section id="navbar">
+            <h1>Les barres de navigations</h1>
+            <code>
+              <span>&lt;ul class="navbar"></span>
+              <span>  &lt;li>Voici le premier lien&lt;/li></span>
+              <span>  &lt;li class="disabled">Voici le deuxième lien désactivé&lt;/li></span>
+              <span>  &lt;li class="active">Voici le troisième lien actif&lt;/li></span>
+              <span>&lt;/ul></span>
+            </code>
+            <div class="result">
+                <ul class="navbar">
+                    <li>Voici le premier lien</li>
+                    <li class="disabled">Voici le deuxième lien désactivé</li>
+                    <li class="active">Voici le troisième lien actif</li>
+                </ul>
+            </div>
+        </section>
+        <section id="breadcrumb">
+            <h1>Les fils d'ariane</h1>
+            <code>
+              <span>&lt;ul class="breadcrumb"></span>
+                <span>&lt;li>Home&lt;/li></span>
+                <span>&lt;li>dir1&lt;/li></span>
+                <span>&lt;li>dir2&lt;/li></span>
+              <span>&lt;/ul></span>
+            </code>
+            <div class="result">
+                <ul class="breadcrumb">
+                    <li>Home</li>
+                    <li>dir1</li>
+                    <li>dir2</li>
+                </ul>
+            </div>
+        </section>
+        <section id="pagination">
+            <h1>La pagination</h1>
+            <code>
+              <span>&lt;ul class="pagination"></span>
+              <span>  &lt;li>«&lt;/li></span>
+              <span>  &lt;li class="active">1&lt;/li></span>
+              <span>  &lt;li class="disabled">2&lt;/li></span>
+              <span>  &lt;li>3&lt;/li></span>
+              <span>  &lt;li>»&lt;/li></span>
+              <span>&lt;/ul></span>
+            </code>
+            <div class="result">
+                <ul class="pagination">
+                    <li>«</li>
+                    <li class="active">1</li>
+                    <li class="disabled">2</li>
+                    <li>3</li>
+                    <li>»</li>
+                </ul>
+            </div>
+        </section>
+
+
+
+<section id="flex-grids">
+          <h1>La Grille flex</h1>
+          <h5>La classe span-*-flex</h5>
+          <code>
+            <span>&lt;div class="row-flex">  &lt;div class="span-12-flex">span-12&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">  &lt;div class="span-11-flex">span-11&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">  &lt;div class="span-10-flex">span-10&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">  &lt;div class="span-9-flex">span-9&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">  &lt;div class="span-8-flex">span-8&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">  &lt;div class="span-7-flex">span-7&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">  &lt;div class="span-6-flex">span-6&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">  &lt;div class="span-5-flex">span-5&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">  &lt;div class="span-4-flex">span-4&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">  &lt;div class="span-3-flex">span-3&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">  &lt;div class="span-2-flex">span-2&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">  &lt;div class="span-1-flex">span-1&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex"></span>
+            <span>    &lt;div class="span-1-flex">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-flex">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-flex">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-flex">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-flex">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-flex">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-flex">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-flex">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-flex">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-flex">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-flex">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-flex">span-1&lt;/div></span>
+            <span>&lt;/div></span>
+
+          </code>
+          <div class="result">
+            <div class="row-flex">  <div class="span-12-flex">span-12</div></div>
+            <div class="row-flex">  <div class="span-11-flex">span-11</div></div>
+            <div class="row-flex">  <div class="span-10-flex">span-10</div></div>
+            <div class="row-flex">  <div class="span-9-flex">span-9</div></div>
+            <div class="row-flex">  <div class="span-8-flex">span-8</div></div>
+            <div class="row-flex">  <div class="span-7-flex">span-7</div></div>
+            <div class="row-flex">  <div class="span-6-flex">span-6</div></div>
+            <div class="row-flex">  <div class="span-5-flex">span-5</div></div>
+            <div class="row-flex">  <div class="span-4-flex">span-4</div></div>
+            <div class="row-flex">  <div class="span-3-flex">span-3</div></div>
+            <div class="row-flex">  <div class="span-2-flex">span-2</div></div>
+            <div class="row-flex">  <div class="span-1-flex">span-1</div></div>
+            <div class="row-flex">
+                <div class="span-1-flex">span-1</div>
+                <div class="span-1-flex">span-1</div>
+                <div class="span-1-flex">span-1</div>
+                <div class="span-1-flex">span-1</div>
+                <div class="span-1-flex">span-1</div>
+                <div class="span-1-flex">span-1</div>
+                <div class="span-1-flex">span-1</div>
+                <div class="span-1-flex">span-1</div>
+                <div class="span-1-flex">span-1</div>
+                <div class="span-1-flex">span-1</div>
+                <div class="span-1-flex">span-1</div>
+                <div class="span-1-flex">span-1</div>
+            </div>
+
+          </div>
+          <h5>La classe offset-*-flex</h5>
+          <code>
+
+            <span>&lt;div class="row-flex">&lt;div class="span-1-flex offset-1-flex">1&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">&lt;div class="span-1-flex offset-2-flex">1&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">&lt;div class="span-1-flex offset-3-flex">1&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">&lt;div class="span-1-flex offset-4-flex">1&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">&lt;div class="span-1-flex offset-5-flex">1&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">&lt;div class="span-1-flex offset-6-flex">1&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">&lt;div class="span-1-flex offset-7-flex">1&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">&lt;div class="span-1-flex offset-8-flex">1&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">&lt;div class="span-1-flex offset-9-flex">1&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">&lt;div class="span-1-flex offset-10-flex">1&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-flex">&lt;div class="span-1-flex offset-11-flex">1&lt;/div>&lt;/div></span>
+
+          </code>
+          <div class="result">
+            <div class="row-flex"><div class="span-1-flex offset-1-flex">1</div></div>
+            <div class="row-flex"><div class="span-1-flex offset-2-flex">1</div></div>
+            <div class="row-flex"><div class="span-1-flex offset-3-flex">1</div></div>
+            <div class="row-flex"><div class="span-1-flex offset-4-flex">1</div></div>
+            <div class="row-flex"><div class="span-1-flex offset-5-flex">1</div></div>
+            <div class="row-flex"><div class="span-1-flex offset-6-flex">1</div></div>
+            <div class="row-flex"><div class="span-1-flex offset-7-flex">1</div></div>
+            <div class="row-flex"><div class="span-1-flex offset-8-flex">1</div></div>
+            <div class="row-flex"><div class="span-1-flex offset-9-flex">1</div></div>
+            <div class="row-flex"><div class="span-1-flex offset-10-flex">1</div></div>
+            <div class="row-flex"><div class="span-1-flex offset-11-flex">1</div></div>
+          </div>
+        </section>
+
+
+<section id="float-grids">
+          <h1>La Grille float</h1>
+          <h5>La classe span-*-float</h5>
+          <code>
+            <span>&lt;div class="row-float">  &lt;div class="span-12-float">span-12&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-float">  &lt;div class="span-11-float">span-11&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-float">  &lt;div class="span-10-float">span-10&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-float">  &lt;div class="span-9-float">span-9&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-float">  &lt;div class="span-8-float">span-8&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-float">  &lt;div class="span-7-float">span-7&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-float">  &lt;div class="span-6-float">span-6&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-float">  &lt;div class="span-5-float">span-5&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-float">  &lt;div class="span-4-float">span-4&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-float">  &lt;div class="span-3-float">span-3&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-float">  &lt;div class="span-2-float">span-2&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-float">  &lt;div class="span-1-float">span-1&lt;/div>&lt;/div></span>
+            <span>&lt;div class="row-float"></span>
+            <span>    &lt;div class="span-1-float">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-float">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-float">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-float">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-float">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-float">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-float">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-float">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-float">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-float">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-float">span-1&lt;/div></span>
+            <span>    &lt;div class="span-1-float">span-1&lt;/div></span>
+            <span>&lt;/div></span>
+
+          </code>
+          <div class="result">
+            <div class="row-float">  <div class="span-12-float">span-12</div></div>
+            <div class="row-float">  <div class="span-11-float">span-11</div></div>
+            <div class="row-float">  <div class="span-10-float">span-10</div></div>
+            <div class="row-float">  <div class="span-9-float">span-9</div></div>
+            <div class="row-float">  <div class="span-8-float">span-8</div></div>
+            <div class="row-float">  <div class="span-7-float">span-7</div></div>
+            <div class="row-float">  <div class="span-6-float">span-6</div></div>
+            <div class="row-float">  <div class="span-5-float">span-5</div></div>
+            <div class="row-float">  <div class="span-4-float">span-4</div></div>
+            <div class="row-float">  <div class="span-3-float">span-3</div></div>
+            <div class="row-float">  <div class="span-2-float">span-2</div></div>
+            <div class="row-float">  <div class="span-1-float">span-1</div></div>
+            <div class="row-float">
+                <div class="span-1-float">span-1</div>
+                <div class="span-1-float">span-1</div>
+                <div class="span-1-float">span-1</div>
+                <div class="span-1-float">span-1</div>
+                <div class="span-1-float">span-1</div>
+                <div class="span-1-float">span-1</div>
+                <div class="span-1-float">span-1</div>
+                <div class="span-1-float">span-1</div>
+                <div class="span-1-float">span-1</div>
+                <div class="span-1-float">span-1</div>
+                <div class="span-1-float">span-1</div>
+                <div class="span-1-float">span-1</div>
+            </div>
+
+          </div>
+          <h5>La classe offset-*-float</h5>
+          <code>
+            <span>&lt;div class="container-float"></span>
+            <span>  &lt;div class="row-float">&lt;div class="span-1-float offset-1-float">1&lt;/div>&lt;/div></span>
+            <span>  &lt;div class="row-float">&lt;div class="span-1-float offset-2-float">1&lt;/div>&lt;/div></span>
+            <span>  &lt;div class="row-float">&lt;div class="span-1-float offset-3-float">1&lt;/div>&lt;/div></span>
+            <span>  &lt;div class="row-float">&lt;div class="span-1-float offset-4-float">1&lt;/div>&lt;/div></span>
+            <span>  &lt;div class="row-float">&lt;div class="span-1-float offset-5-float">1&lt;/div>&lt;/div></span>
+            <span>  &lt;div class="row-float">&lt;div class="span-1-float offset-6-float">1&lt;/div>&lt;/div></span>
+            <span>  &lt;div class="row-float">&lt;div class="span-1-float offset-7-float">1&lt;/div>&lt;/div></span>
+            <span>  &lt;div class="row-float">&lt;div class="span-1-float offset-8-float">1&lt;/div>&lt;/div></span>
+            <span>  &lt;div class="row-float">&lt;div class="span-1-float offset-9-float">1&lt;/div>&lt;/div></span>
+            <span>  &lt;div class="row-float">&lt;div class="span-1-float offset-10-float">1&lt;/div>&lt;/div></span>
+            <span>  &lt;div class="row-float">&lt;div class="span-1-float offset-11-float">1&lt;/div>&lt;/div></span>
+            <span>&lt;div class="container-float"></span>
+          </code>
+          <div class="result">
+            <div class="container-float">
+              <div class="row-float"><div class="span-1-float offset-1-float">1</div></div>
+              <div class="row-float"><div class="span-1-float offset-2-float">1</div></div>
+              <div class="row-float"><div class="span-1-float offset-3-float">1</div></div>
+              <div class="row-float"><div class="span-1-float offset-4-float">1</div></div>
+              <div class="row-float"><div class="span-1-float offset-5-float">1</div></div>
+              <div class="row-float"><div class="span-1-float offset-6-float">1</div></div>
+              <div class="row-float"><div class="span-1-float offset-7-float">1</div></div>
+              <div class="row-float"><div class="span-1-float offset-8-float">1</div></div>
+              <div class="row-float"><div class="span-1-float offset-9-float">1</div></div>
+              <div class="row-float"><div class="span-1-float offset-10-float">1</div></div>
+              <div class="row-float"><div class="span-1-float offset-11-float">1</div></div>
+            </div>
+          </div>
+        </section>
     </div>
   </div>
 </body>

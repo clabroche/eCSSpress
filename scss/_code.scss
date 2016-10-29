@@ -1,94 +1,107 @@
-
-
-blockquote, code{
-	width: 90%;
-}
-.result{
-	width: 100%;
-	margin-top: 10px;
-	line-height: initial;
-}
-blockquote,code{
+blockquote,code,.result{
+	margin-bottom: 10px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5px;
-	margin-bottom: 20px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	padding-left: 4px;	
-	padding-right: 4px;	
+	padding-left: 4px;
+	padding-right: 4px;
 	display: block;
-	border-radius: 0.2em;
-	line-height: 1.2em;
-	border: 1px solid #ddd;
-	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+
+blockquote{
+	quotes: "\201C""\201D""\2018""\2019";
+	line-height: $quoteLineHeight;
+	border-radius: $quoteRadius;
+	border: $quoteBorder;
+	box-shadow: $quoteBoxShadow;
+	&:before {
+		color: $quoteBeforeColor;
+		content: $quoteContent;
+		font-size: $quoteFontSize;
+		float: left;
+		height: 0.5em;
+		line-height: initial;
+		margin-right: $spaceBeetweenQuoteText;
+	}
+
+	& .author{
+		margin-top: $spaceBeetweenTextAuthor;
+		width: 100%;
+		padding-right: 10px;
+		text-align: right;
+	}
+}
+
+code{
+	color: $codeColor;
 	counter-reset: ligne;
-	color: #303030;
-}
-blockquote{quotes: "\201C""\201D""\2018""\2019";}
-blockquote:before {
-	color: #DDDDDD;
-	content: open-quote;
-	font-size: 4em;
-	line-height: 0.1em;
-	margin-right: 0.25em;
-	vertical-align: -0.4em;
-}
-.result:before{
-	content: "Result:";
-	display:block;
-	margin-bottom:10px;
-	border-bottom: 1px solid #ddd;
-}
-blockquote .author{
-	width: 100%;
-	padding-right: 10px;
-	text-align: right;
-}
-blockquote :before{
-	content: "- ";
+	line-height: $codeLineHeight;
+	border-radius: $codeRadius;
+	border: $codeBorder;
+	box-shadow: $codeBoxShadow;
+	& span{
+		display: block;
+		white-space: pre-wrap;
+		&:before {
+			border-right: 1px solid #ddd;
+			display: inline-block;
+			counter-increment: ligne;
+			content: counter(ligne);
+			margin-right: 5px;
+			width: 2em;
+			text-align: center;
+		}
+	}
 }
 
-code span{
-	display: block;
+
+
+.result{
+	box-shadow: $resultBoxShadow;
+	border-radius: $resultRadius;
+	border: $resultBorder;
+	&:before{
+		content: "Result:";
+		display:block;
+		margin-bottom:10px;
+		border-bottom: $resultBorder;
+	}
 }
-code span:before {
-	border-right: 1px solid #ddd;
-	display: inline-block;
-	counter-increment: ligne;
-	content: counter(ligne);
-	margin-right: 5px;
-	padding-right: 5px;
-}
+
+
 pre {
-	width: 99%;                white-space: pre-wrap;       /* css-3 */
-	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-	white-space: -pre-wrap;      /* Opera 4-6 */
-	white-space: -o-pre-wrap;    /* Opera 7 */
-	word-wrap: break-word;       /* Internet Explorer 5.5+ */   
+	width: 99%;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
 }
+
+
 kbd {
-    color: #252525;
-    font-size: 0.8em;
-    padding: 2px;
-    line-height: 2.5em;
-    background-color: #FFFFFF;
-    border-top: solid 1px #CCC;
-    border-right: solid 2px #AAA;
-    border-bottom: solid 3px #999;
-    border-left: solid 2px #BBB;
-    border-radius: 4px;
+	color: $kbdColor;
+	font-size: $kbdFontSize;
+	padding: $kbdPadding;
+	line-height: $kbdLineHeight;
+	background-color: $kbdBg;
+	border-top: solid $kbdBorderSize lighten($kbdBorderColor,30);
+	border-right: solid $kbdBorderSize lighten($kbdBorderColor,10);
+	border-bottom: solid $kbdBorderSize $kbdBorderColor;
+	border-left: solid $kbdBorderSize lighten($kbdBorderColor,20);
+	border-radius: 4px;
+	&:hover {
+		color: $kbdHoverColor;
+		background-color: $kbdHoverBg;
+	}
+	&:active, &.selected {
+		border-top: solid $kbdBorderSize $kbdBorderColor;
+		border-right: solid $kbdBorderSize lighten($kbdBorderColor,20);
+		border-bottom: solid $kbdBorderSize lighten($kbdBorderColor,30);
+		border-left: solid $kbdBorderSize lighten($kbdBorderColor,10);
+	}
 }
-
-kbd:hover {
-    color: #222;
-    background-color: #FAFAFA;
-}
-kbd:active, kbd.selected {
-    border-top: solid 2px #999;
-    border-right: solid 2px #BBB;
-    border-bottom: solid 2px #CCC;
-    border-left: solid 2px #AAA;
-}
-
-
