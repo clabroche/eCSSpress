@@ -2,7 +2,9 @@ $gutter: 2%;
 $numbCol: 12;
 
 
-
+$radius:0.2em;
+$border:1px solid #ddd;
+$boxShadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
 /*======================================*/
 /*=              Colors                =*/
@@ -76,3 +78,47 @@ $breadcrumbColor: #404040 !default;
 
 /*Paginition*/
 $paginationBackground:$defaultLightBackgroundColor !default;
+
+
+
+
+
+/*======================================*/
+/*=       Code, quotes, kbd            =*/
+/*======================================*/
+
+
+/*codes*/
+$codeColor: #303030 !default;
+$codeLineHeight:1.2em;
+$codeRadius:$radius;
+$codeBorder:$border;
+$codeBoxShadow:$boxShadow;
+
+/*quotes*/
+$quoteBeforeColor:#DDDDDD !default;
+$quoteLineHeight:1.2em;
+$quoteFontSize:4em;
+$spaceBeetweenQuoteText:1rem;
+$spaceBeetweenTextAuthor:20px;
+$quoteRadius:$radius;
+$quoteBorder:$border;
+$quoteBoxShadow:$boxShadow;
+$quoteContent:open-quote;
+
+/*result*/
+$resultBorder:$border;
+$resultBoxShadow:$boxShadow;
+$resultRadius:$radius;
+$resultRadius:$radius;
+
+/*kbd*/
+$kbdBorderSize:2px;
+$kbdLineHeight:2.4em;
+$kbdPadding:4px;
+$kbdColor:#252525;
+$kbdFontSize:0.8em;
+$kbdBg:$white;
+$kbdBorderColor:#999;
+$kbdHoverBg:#FAFAFA;
+$kbdHoverColor:#222;

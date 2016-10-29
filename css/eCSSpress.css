@@ -61,6 +61,13 @@ div, span {
 /*Navbar*/
 /*Breadcrumb*/
 /*Paginition*/
+/*======================================*/
+/*=       Code, quotes, kbd            =*/
+/*======================================*/
+/*codes*/
+/*quotes*/
+/*result*/
+/*kbd*/
 .span-1-flex {
   box-sizing: border-box;
   width: 6.5%;
@@ -455,23 +462,6 @@ abbr {
 .align-center {
   text-align: center; }
 
-blockquote, code {
-  line-height: 1.2em;
-  counter-reset: ligne;
-  color: #303030; }
-
-blockquote {
-  quotes: "“" "”" "‘" "’"; }
-
-blockquote:before {
-  color: #DDDDDD;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-  padding-right: 2em; }
-
 blockquote, code, .result {
   margin-bottom: 10px;
   margin-left: auto;
@@ -481,72 +471,84 @@ blockquote, code, .result {
   padding-bottom: 5px;
   padding-left: 4px;
   padding-right: 4px;
-  display: block;
+  display: block; }
+
+blockquote {
+  quotes: "“" "”" "‘" "’";
+  line-height: 1.2em;
   border-radius: 0.2em;
   border: 1px solid #ddd;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+  blockquote:before {
+    color: #DDDDDD;
+    content: open-quote;
+    font-size: 4em;
+    float: left;
+    height: 0.5em;
+    line-height: initial;
+    margin-right: 1rem; }
+  blockquote .author {
+    margin-top: 20px;
+    width: 100%;
+    padding-right: 10px;
+    text-align: right; }
 
-.result:before {
-  content: "Result:";
-  display: block;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ddd; }
+code {
+  color: #303030;
+  counter-reset: ligne;
+  line-height: 1.2em;
+  border-radius: 0.2em;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+  code span {
+    display: block;
+    white-space: pre-wrap; }
+    code span:before {
+      border-right: 1px solid #ddd;
+      display: inline-block;
+      counter-increment: ligne;
+      content: counter(ligne);
+      margin-right: 5px;
+      width: 2em;
+      text-align: center; }
 
-blockquote .author {
-  width: 100%;
-  padding-right: 10px;
-  text-align: right; }
-
-blockquote :before {
-  content: "- "; }
-
-code span {
-  display: block;
-  white-space: pre-wrap; }
-
-code span:before {
-  border-right: 1px solid #ddd;
-  display: inline-block;
-  counter-increment: ligne;
-  content: counter(ligne);
-  margin-right: 5px;
-  width: 2em;
-  text-align: center; }
+.result {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0.2em;
+  border: 1px solid #ddd; }
+  .result:before {
+    content: "Result:";
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd; }
 
 pre {
   width: 99%;
   white-space: pre-wrap;
-  /* css-3 */
   white-space: -moz-pre-wrap;
-  /* Mozilla, since 1999 */
   white-space: -pre-wrap;
-  /* Opera 4-6 */
   white-space: -o-pre-wrap;
-  /* Opera 7 */
-  word-wrap: break-word;
-  /* Internet Explorer 5.5+ */ }
+  word-wrap: break-word; }
 
 kbd {
   color: #252525;
   font-size: 0.8em;
-  padding: 2px;
-  line-height: 2.5em;
-  background-color: #FFFFFF;
-  border-top: solid 1px #CCC;
-  border-right: solid 2px #AAA;
-  border-bottom: solid 3px #999;
-  border-left: solid 2px #BBB;
+  padding: 4px;
+  line-height: 2.4em;
+  background-color: #ffffff;
+  border-top: solid 2px #e6e6e6;
+  border-right: solid 2px #b3b3b3;
+  border-bottom: solid 2px #999;
+  border-left: solid 2px #cccccc;
   border-radius: 4px; }
-
-kbd:hover {
-  color: #222;
-  background-color: #FAFAFA; }
-
-kbd:active, kbd.selected {
-  border-top: solid 2px #999;
-  border-right: solid 2px #BBB;
-  border-bottom: solid 2px #CCC;
-  border-left: solid 2px #AAA; }
+  kbd:hover {
+    color: #222;
+    background-color: #FAFAFA; }
+  kbd:active, kbd.selected {
+    border-top: solid 2px #999;
+    border-right: solid 2px #cccccc;
+    border-bottom: solid 2px #e6e6e6;
+    border-left: solid 2px #b3b3b3; }
 
 ul li {
   margin-left: 2em;
