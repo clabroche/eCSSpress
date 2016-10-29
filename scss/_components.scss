@@ -1,24 +1,27 @@
 .header{
 	display: flex;
-	width: 100%;
-	background-color: $defaultLightBackgroundColor;
-	padding-top: 30px;
-	padding-left: 30px;
 	align-items: flex-end;
-	padding-bottom: 50px;
+	width: 100%;
+	background-color: $headerBg;
+	padding-top: $headerPaddingTopBottom;
+	padding-bottom: $headerPaddingTopBottom;
+	padding-left: $headerPaddingLeftRight;
+	padding-right: $headerPaddingLeftRight;
+	color: $headerColor;
 	small{
 		margin-left: 5px;
+		color: $headerSmallColor;
 	}
 }
 
 
 .jumbotron{
 	width: 100%;
-	background-color: $defaultLightBackgroundColor;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	padding-left: 30px;
-	padding-right: 30px;
+	background-color: $jumbotronBg;
+	padding-top: $jumbotronPaddingTopBottom;
+	padding-bottom: $jumbotronPaddingTopBottom;
+	padding-left: $jumbotronPaddingLeftRight;
+	padding-right: $jumbotronPaddingLeftRight;
 	h1{
 		margin-bottom: 20px;
 	}

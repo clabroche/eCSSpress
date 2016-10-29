@@ -68,6 +68,8 @@ div, span {
 /*quotes*/
 /*result*/
 /*kbd*/
+/*Header*/
+/*Jumbotron*/
 .span-1-flex {
   box-sizing: border-box;
   width: 6.5%;
@@ -689,20 +691,23 @@ ul li {
 
 .header {
   display: flex;
+  align-items: flex-end;
   width: 100%;
   background-color: #E5E5E5;
   padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 30px;
-  align-items: flex-end;
-  padding-bottom: 50px; }
+  padding-right: 30px;
+  color: auto; }
   .header small {
-    margin-left: 5px; }
+    margin-left: 5px;
+    color: auto; }
 
 .jumbotron {
   width: 100%;
   background-color: #E5E5E5;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px; }
   .jumbotron h1 {

@@ -1,10 +1,10 @@
-$gutter: 2%;
-$numbCol: 12;
+$gutter: 2% !default;
+$numbCol: 12 !default;
 
 
-$radius:0.2em;
-$border:1px solid #ddd;
-$boxShadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+$radius:0.2em !default;
+$border:1px solid #ddd !default;
+$boxShadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2) !default;
 
 /*======================================*/
 /*=              Colors                =*/
@@ -48,17 +48,17 @@ $buttonYellowColor:$white !default;
 
 
 /*Size*/
-$btn-sm-size:0.8em;
-$btn-sm-lineHeight:1.8em;
-$btn-sm-paddingLeft:5px;
-$btn-sm-paddingRight:5px;
+$btn-sm-size:0.8em !default;
+$btn-sm-lineHeight:1.8em !default;
+$btn-sm-paddingLeft:5px !default;
+$btn-sm-paddingRight:5px !default;
 
-$btn-lg-size:1.2em;
-$btn-lg-lineHeight:2.2em;
-$btn-lg-paddingLeft: 15px;
-$btn-lg-paddingRight: 15px;
+$btn-lg-size:1.2em !default;
+$btn-lg-lineHeight:2.2em !default;
+$btn-lg-paddingLeft: 15px !default;
+$btn-lg-paddingRight: 15px !default;
 
-$btn-x-lg-width:100%;
+$btn-x-lg-width:100% !default;
 
 
 
@@ -91,34 +91,54 @@ $paginationBackground:$defaultLightBackgroundColor !default;
 /*codes*/
 $codeColor: #303030 !default;
 $codeLineHeight:1.2em;
-$codeRadius:$radius;
-$codeBorder:$border;
-$codeBoxShadow:$boxShadow;
+$codeRadius:$radius !default;
+$codeBorder:$border !default;
+$codeBoxShadow:$boxShadow !default;
 
 /*quotes*/
 $quoteBeforeColor:#DDDDDD !default;
-$quoteLineHeight:1.2em;
-$quoteFontSize:4em;
-$spaceBeetweenQuoteText:1rem;
-$spaceBeetweenTextAuthor:20px;
-$quoteRadius:$radius;
-$quoteBorder:$border;
-$quoteBoxShadow:$boxShadow;
-$quoteContent:open-quote;
+$quoteLineHeight:1.2em !default;
+$quoteFontSize:4em !default;
+$spaceBeetweenQuoteText:1rem !default;
+$spaceBeetweenTextAuthor:20px !default;
+$quoteRadius:$radius !default;
+$quoteBorder:$border !default;
+$quoteBoxShadow:$boxShadow !default;
+$quoteContent:open-quote !default;
 
 /*result*/
-$resultBorder:$border;
-$resultBoxShadow:$boxShadow;
-$resultRadius:$radius;
-$resultRadius:$radius;
+$resultBorder:$border !default;
+$resultBoxShadow:$boxShadow !default;
+$resultRadius:$radius !default;
+$resultRadius:$radius !default;
 
 /*kbd*/
-$kbdBorderSize:2px;
-$kbdLineHeight:2.4em;
-$kbdPadding:4px;
-$kbdColor:#252525;
-$kbdFontSize:0.8em;
-$kbdBg:$white;
-$kbdBorderColor:#999;
-$kbdHoverBg:#FAFAFA;
-$kbdHoverColor:#222;
+$kbdBorderSize:2px !default;
+$kbdLineHeight:2.4em !default;
+$kbdPadding:4px !default;
+$kbdColor:#252525 !default;
+$kbdFontSize:0.8em !default;
+$kbdBg:$white !default;
+$kbdBorderColor:#999 !default;
+$kbdHoverBg:#FAFAFA !default;
+$kbdHoverColor:#222 !default;
+
+
+
+
+
+/*======================================*/
+/*=             Components             =*/
+/*======================================*/
+
+/*Header*/
+$headerBg: $defaultLightBackgroundColor;
+$headerColor:auto;
+$headerSmallColor:auto;
+$headerPaddingLeftRight:30px;
+$headerPaddingTopBottom:30px;
+
+/*Jumbotron*/
+$jumbotronBg:$defaultLightBackgroundColor;
+$jumbotronPaddingLeftRight:30px;
+$jumbotronPaddingTopBottom:30px;
