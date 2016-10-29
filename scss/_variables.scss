@@ -3,6 +3,8 @@
 $radius:0.2em !default;
 $border:1px solid #ddd !default;
 $boxShadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2) !default;
+$responsiveLarge:900px;
+$responsiveMedium:400px;
 
 /*======================================*/
 /*=              Colors                =*/
@@ -57,26 +59,6 @@ $btn-lg-paddingLeft: 15px !default;
 $btn-lg-paddingRight: 15px !default;
 
 $btn-x-lg-width:100% !default;
-
-
-
-
-
-/*======================================*/
-/*=              Navigation            =*/
-/*======================================*/
-
-/*Navbar*/
-$navbarBackgroundColor: $defaultLightBackgroundColor !default;
-$navbarColor: #000000 !default;
-
-/*Breadcrumb*/
-$breadcrumbBackgroundColor:$defaultLightBackgroundColor !default;
-$breadcrumbColor: #404040 !default;
-
-/*Paginition*/
-$paginationBackground:$defaultLightBackgroundColor !default;
-
 
 
 
@@ -162,3 +144,30 @@ $numbCol: 12 !default;
 
 /*Listes*/
 $listMargin:2em;
+
+
+
+
+/*======================================*/
+/*=              Navigation            =*/
+/*======================================*/
+
+/*Navbar*/
+$navbarBackgroundColor: $defaultLightBackgroundColor !default;
+$navbarColor: #000000 !default;
+$navbarPadding:1em;
+$navbarActive:4px;
+$navbarMedium:$responsiveMedium;
+$navbarLarge:$responsiveLarge;
+$navbarHeight:50px;
+
+/*Breadcrumb*/
+$breadcrumbBackgroundColor:$defaultLightBackgroundColor !default;
+$breadcrumbColor: #404040 !default;
+$breadcrumbContent:">";
+$breadcrumbMargin:10px;
+$breadcrumbPadding:5px;
+
+/*Paginition*/
+$paginationBackground:$defaultLightBackgroundColor !default;
+$paginationPadding:10px;

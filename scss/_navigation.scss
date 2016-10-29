@@ -11,8 +11,8 @@
     line-height: $navbarHeight;
 
     li {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: $navbarPadding;
+        padding-right: $navbarPadding;
         margin: 0;
         border-bottom: 1px solid darken($navbarBackgroundColor, 20);
         text-align: center;
@@ -27,7 +27,7 @@
     }
 
     .active {
-        border-left: solid 4px darken($navbarBackgroundColor, 50);
+        border-left: solid $navbarActive darken($navbarBackgroundColor, 50);
     }
 
     a {
@@ -35,7 +35,7 @@
         color: $navbarColor;
     }
 
-    @media screen and (min-width: 400px) {
+    @media screen and (min-width: $navbarMedium) {
         flex-direction: row;
         justify-content: space-around;
 
@@ -44,11 +44,11 @@
         }
 
         .active {
-            border-bottom: solid 4px darken($navbarBackgroundColor, 50);
+            border-bottom: solid $navbarActive darken($navbarBackgroundColor, 50);
             border-left: none;
         }
 
-        @media screen and (min-width: 900px) {
+        @media screen and (min-width: $navbarLarge) {
             justify-content: flex-end;
         }
     }
@@ -61,16 +61,16 @@
     display: flex;
     justify-content: flex-start;
     background-color: $breadcrumbBackgroundColor;
-    padding: 5px;
+    padding: $breadcrumbPadding;
     li {
-        margin-right: 10px;
+        margin-right: $breadcrumbMargin;
         margin-left: 0;
     }
 
     li:after {
-        content: ">";
-        margin-left: 10px;
-    } 
+        content: $breadcrumbContent;
+        margin-left: $breadcrumbMargin;
+    }
     li:last-of-type:after{
         content: "";
     }
@@ -86,7 +86,7 @@
     display: inline-flex;
 
     li {
-        padding: 10px;
+        padding: $paginationPadding;
         margin: 0;
         background-color: $paginationBackground;
 
