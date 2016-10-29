@@ -85,6 +85,13 @@ div, span {
 /*=              Tables                =*/
 /*======================================*/
 /*Table*/
+/*======================================*/
+/*=              Tables                =*/
+/*======================================*/
+/*Titres*/
+/*Sous titres*/
+/*Paragraphes*/
+/*Mark*/
 .span-1-flex {
   box-sizing: border-box;
   width: 6.5%;
@@ -426,24 +433,20 @@ h4 {
   font-size: 1.75em; }
 
 h5 {
-  font-size: 1.50em; }
+  font-size: 1.5em; }
 
 h6 {
   font-size: 1.25em; }
 
-h1 > small, h2 > small, h3 > small, h4 > small, h5 > small, h6 > small {
+h1 > small, h2 > small, h3 > small, h4 > small, h5 > small, h6 > small, .sub {
   font-size: 12px;
-  color: grey; }
-
-.sub {
-  font-size: 12px;
-  color: grey; }
+  color: #797979; }
 
 p {
   margin-bottom: 10px; }
 
 mark {
-  background-color: #CC0000; }
+  background-color: #797979; }
 
 del {
   text-decoration: line-through; }
