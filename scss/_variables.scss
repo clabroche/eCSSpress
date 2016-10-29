@@ -1,26 +1,24 @@
-
-
-$radius:0.2em !default;
-$border:1px solid #ddd !default;
-$boxShadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2) !default;
-$responsiveLarge:900px;
-$responsiveMedium:400px;
+$radius:           0.2em !default;
+$border:           1px solid #ddd !default;
+$boxShadow:        2px 2px 2px 1px rgba(0, 0, 0, 0.2) !default;
+$responsiveLarge:  900px !default;
+$responsiveMedium: 400px !default;
 
 /*======================================*/
 /*=              Colors                =*/
 /*======================================*/
 
 /*Default color*/
-$red:#c81111!default;
-$yellow:#c9c817!default;
-$green:#2FA242!default;
-$blue:#3A49C1!default;
-$lightgrey:#eeeeee!default;
-$white:#ffffff !default;
-$black:#000000 !default;
-$grey: #797979 !default;
+$red:                         #c81111!default;
+$yellow:                      #c9c817!default;
+$green:                       #2FA242!default;
+$blue:                        #3A49C1!default;
+$lightgrey:                   #eeeeee!default;
+$white:                       #ffffff !default;
+$black:                       #000000 !default;
+$grey:                        #797979 !default;
 
-$defaultLightBackgroundColor:#E5E5E5 !default;
+$defaultLightBackgroundColor: #E5E5E5 !default;
 
 
 /*======================================*/
@@ -28,37 +26,37 @@ $defaultLightBackgroundColor:#E5E5E5 !default;
 /*======================================*/
 
 /*Color*/
-$buttonNormalBackground:#F0F0F0 !default;
-$buttonNormalColor:$black !default;
+$buttonNormalBackground:    #F0F0F0 !default;
+$buttonNormalColor:         $black !default;
 
-$buttonRedBackground:$red !default;
-$buttonRedColor:$white !default;
+$buttonRedBackground:       $red !default;
+$buttonRedColor:            $white !default;
 
-$buttonGreenBackground:$green !default;
-$buttonGreenColor:$white !default;
+$buttonGreenBackground:     $green !default;
+$buttonGreenColor:          $white !default;
 
-$buttonBlueBackground:$blue !default;
-$buttonBlueColor:$white !default;
+$buttonBlueBackground:      $blue !default;
+$buttonBlueColor:           $white !default;
 
-$buttonLightGreyBackground:$lightgrey !default;
-$buttonLightGreyColor:$white !default;
+$buttonLightGreyBackground: $lightgrey !default;
+$buttonLightGreyColor:      $white !default;
 
-$buttonYellowBackground:$yellow !default;
-$buttonYellowColor:$white !default;
+$buttonYellowBackground:    $yellow !default;
+$buttonYellowColor:         $white !default;
 
 
 /*Size*/
-$btn-sm-size:0.8em !default;
-$btn-sm-lineHeight:1.8em !default;
-$btn-sm-paddingLeft:5px !default;
-$btn-sm-paddingRight:5px !default;
+$btn-sm-size:               0.8em !default;
+$btn-sm-lineHeight:         1.8em !default;
+$btn-sm-paddingLeft:        5px !default;
+$btn-sm-paddingRight:       5px !default;
 
-$btn-lg-size:1.2em !default;
-$btn-lg-lineHeight:2.2em !default;
-$btn-lg-paddingLeft: 15px !default;
-$btn-lg-paddingRight: 15px !default;
+$btn-lg-size:               1.2em !default;
+$btn-lg-lineHeight:         2.2em !default;
+$btn-lg-paddingLeft:        15px !default;
+$btn-lg-paddingRight:       15px !default;
 
-$btn-x-lg-width:100% !default;
+$btn-x-lg-width:            100% !default;
 
 
 
@@ -69,39 +67,39 @@ $btn-x-lg-width:100% !default;
 
 
 /*codes*/
-$codeColor: #303030 !default;
-$codeLineHeight:1.2em;
-$codeRadius:$radius !default;
-$codeBorder:$border !default;
-$codeBoxShadow:$boxShadow !default;
+$codeColor:               #303030 !default;
+$codeLineHeight:          1.2em;
+$codeRadius:              $radius !default;
+$codeBorder:              $border !default;
+$codeBoxShadow:           $boxShadow !default;
 
 /*quotes*/
-$quoteBeforeColor:#DDDDDD !default;
-$quoteLineHeight:1.2em !default;
-$quoteFontSize:4em !default;
-$spaceBeetweenQuoteText:1rem !default;
-$spaceBeetweenTextAuthor:20px !default;
-$quoteRadius:$radius !default;
-$quoteBorder:$border !default;
-$quoteBoxShadow:$boxShadow !default;
-$quoteContent:open-quote !default;
+$quoteBeforeColor:        #DDDDDD !default;
+$quoteLineHeight:         1.2em !default;
+$quoteFontSize:           4em !default;
+$spaceBeetweenQuoteText:  1rem !default;
+$spaceBeetweenTextAuthor: 20px !default;
+$quoteRadius:             $radius !default;
+$quoteBorder:             $border !default;
+$quoteBoxShadow:          $boxShadow !default;
+$quoteContent:            open-quote !default;
 
 /*result*/
-$resultBorder:$border !default;
-$resultBoxShadow:$boxShadow !default;
-$resultRadius:$radius !default;
-$resultRadius:$radius !default;
+$resultBorder:            $border !default;
+$resultBoxShadow:         $boxShadow !default;
+$resultRadius:            $radius !default;
+$resultRadius:            $radius !default;
 
 /*kbd*/
-$kbdBorderSize:2px !default;
-$kbdLineHeight:2.4em !default;
-$kbdPadding:4px !default;
-$kbdColor:#252525 !default;
-$kbdFontSize:0.8em !default;
-$kbdBg:$white !default;
-$kbdBorderColor:#999 !default;
-$kbdHoverBg:#FAFAFA !default;
-$kbdHoverColor:#222 !default;
+$kbdBorderSize:           2px !default;
+$kbdLineHeight:           2.4em !default;
+$kbdPadding:              4px !default;
+$kbdColor:                #252525 !default;
+$kbdFontSize:             0.8em !default;
+$kbdBg:                   $white !default;
+$kbdBorderColor:          #999 !default;
+$kbdHoverBg:              #FAFAFA !default;
+$kbdHoverColor:           #222 !default;
 
 
 
@@ -112,16 +110,16 @@ $kbdHoverColor:#222 !default;
 /*======================================*/
 
 /*Header*/
-$headerBg: $defaultLightBackgroundColor;
-$headerColor:auto;
-$headerSmallColor:auto;
-$headerPaddingLeftRight:30px;
-$headerPaddingTopBottom:30px;
+$headerBg:                  $defaultLightBackgroundColor !default;
+$headerColor:               auto !default;
+$headerSmallColor:          auto !default;
+$headerPaddingLeftRight:    30px !default;
+$headerPaddingTopBottom:    30px !default;
 
 /*Jumbotron*/
-$jumbotronBg:$defaultLightBackgroundColor;
-$jumbotronPaddingLeftRight:30px;
-$jumbotronPaddingTopBottom:30px;
+$jumbotronBg:               $defaultLightBackgroundColor !default;
+$jumbotronPaddingLeftRight: 30px !default;
+$jumbotronPaddingTopBottom: 30px !default;
 
 
 
@@ -132,7 +130,7 @@ $jumbotronPaddingTopBottom:30px;
 /*======================================*/
 
 /*Grids*/
-$gutter: 2% !default;
+$gutter:  2% !default;
 $numbCol: 12 !default;
 
 
@@ -143,7 +141,7 @@ $numbCol: 12 !default;
 /*======================================*/
 
 /*Listes*/
-$listMargin:2em;
+$listMargin: 2em !default;
 
 
 
@@ -153,24 +151,24 @@ $listMargin:2em;
 /*======================================*/
 
 /*Navbar*/
-$navbarBackgroundColor: $defaultLightBackgroundColor !default;
-$navbarColor: #000000 !default;
-$navbarPadding:1em;
-$navbarActive:4px;
-$navbarMedium:$responsiveMedium;
-$navbarLarge:$responsiveLarge;
-$navbarHeight:50px;
+$navbarBackgroundColor:     $defaultLightBackgroundColor !default;
+$navbarColor:               #000000 !default;
+$navbarPadding:             1em !default;
+$navbarActive:              4px !default;
+$navbarMedium:              $responsiveMedium !default;
+$navbarLarge:               $responsiveLarge !default;
+$navbarHeight:              50px !default;
 
 /*Breadcrumb*/
-$breadcrumbBackgroundColor:$defaultLightBackgroundColor !default;
-$breadcrumbColor: #404040 !default;
-$breadcrumbContent:">";
-$breadcrumbMargin:10px;
-$breadcrumbPadding:5px;
+$breadcrumbBackgroundColor: $defaultLightBackgroundColor !default;
+$breadcrumbColor:           #404040 !default;
+$breadcrumbContent:         ">" !default;
+$breadcrumbMargin:          10px !default;
+$breadcrumbPadding:         5px !default;
 
 /*Paginition*/
-$paginationBackground:$defaultLightBackgroundColor !default;
-$paginationPadding:10px;
+$paginationBackground:      $defaultLightBackgroundColor !default;
+$paginationPadding:         10px !default;
 
 
 
@@ -180,15 +178,15 @@ $paginationPadding:10px;
 /*======================================*/
 
 /*Table*/
-$tableEven:$lightgrey;
-$tableHoverBg:#3B95FF;
-$tableHoverColor:$white;
-$tableBorderSize:1px;
-$tableBorderColor:$black;
-$tablePadding:8px;
-$tableBorderType:solid;
-$tableHeaderBg:$white;
-$tableHeaderColor:$black;
+$tableEven:        $lightgrey !default;
+$tableHoverBg:     #3B95FF !default;
+$tableHoverColor:  $white !default;
+$tableBorderSize:  1px !default;
+$tableBorderColor: $black !default;
+$tablePadding:     8px !default;
+$tableBorderType:  solid !default;
+$tableHeaderBg:    $white !default;
+$tableHeaderColor: $black !default;
 
 
 
@@ -197,16 +195,16 @@ $tableHeaderColor:$black;
 /*======================================*/
 
 /*Titres*/
-$titleSizeMax:2.5em;
-$titleSizeMin:1.25em;
-$titleMargin:15px;
+$titleSizeMax:          2.5em !default;
+$titleSizeMin:          1.25em !default;
+$titleMargin:           15px !default;
 
 /*Sous titres*/
-$smallFontSize:12px;
-$smallColor:$grey;
+$smallFontSize:         12px !default;
+$smallColor:            $grey !default;
 
 /*Paragraphes*/
-$paragraphMarginBottom:10px;
+$paragraphMarginBottom: 10px !default;
 
 /*Mark*/
-$markBg:$grey;
+$markBg:                $grey !default;
