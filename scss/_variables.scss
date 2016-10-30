@@ -14,10 +14,11 @@ $yellow:                      #c9c817!default;
 $green:                       #2FA242!default;
 $blue:                        #3A49C1!default;
 $lightgrey:                   #eeeeee!default;
+$darkgrey:                    #303030!default;
 $white:                       #ffffff !default;
 $black:                       #000000 !default;
 $grey:                        #797979 !default;
-
+$orange:                      #ef6c00 !default;
 $defaultLightBackgroundColor: #E5E5E5 !default;
 
 
@@ -121,7 +122,16 @@ $jumbotronBg:               $defaultLightBackgroundColor !default;
 $jumbotronPaddingLeftRight: 30px !default;
 $jumbotronPaddingTopBottom: 30px !default;
 
-
+/*Progressionbar*/
+$progressionbarHeight:      10px                  !default;
+$progressionbarPadding:     4px                    !default;
+$progressionbarRadiusInt:   $progressionbarHeight/2 !default;
+$progressionbarRadiusExt:   $progressionbarRadiusInt + $progressionbarPadding !default;
+$progressionDefaultBackground: $grey !default;
+$progressionRedBackground:  $red                  !default;
+$progressionYellowBackground:    $yellow !default;
+$progressionGreenBackground:   $green !default;
+$progressionBlueBackground:  $blue !default;
 
 
 

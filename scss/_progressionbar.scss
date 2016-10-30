@@ -1,0 +1,22 @@
+.progressionbar{
+	@include make-progressbar($progressionDefaultBackground);
+	border-radius:$progressionbarRadiusExt;
+	width:100%;
+	padding:$progressionbarPadding;
+}
+
+
+
+.progressionbar-red   {@include make-progressbar($progressionRedBackground);}
+.progressionbar-yellow{@include make-progressbar($progressionYellowBackground);}
+.progressionbar-green {@include make-progressbar($progressionGreenBackground);}
+.progressionbar-blue  {@include make-progressbar($progressionBlueBackground);}
+
+
+@for $status from 0 through 100 {
+	.progressionbar-progress-#{$status}{
+			width: percentage($status/100);
+			height:$progressionbarHeight;
+			border-radius:$progressionbarRadiusInt;
+	}
+}

@@ -1,0 +1,7 @@
+@mixin make-progressbar($color) {
+
+	background-color:darken($color,7);
+	& .progressionbar-status{
+		background-color: lighten($color,7);
+	}
+}
