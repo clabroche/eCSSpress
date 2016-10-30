@@ -21,29 +21,38 @@ $grey:                        #797979 !default;
 $orange:                      #ef6c00 !default;
 $defaultLightBackgroundColor: #E5E5E5 !default;
 
+$primaryColorDark:            $darkgrey !default;
+$primaryColor:                darken($primaryColorDark,5)!default;
+
+$accentColor:            $orange !default;
+$accentInvert:           $white  !default;
+
 
 /*======================================*/
 /*=              Buttons               =*/
 /*======================================*/
 
 /*Color*/
-$buttonNormalBackground:    #F0F0F0 !default;
+$buttonNormalBg:            #F0F0F0 !default;
 $buttonNormalColor:         $black !default;
 
-$buttonRedBackground:       $red !default;
+$buttonRedBg:               $red !default;
 $buttonRedColor:            $white !default;
 
-$buttonGreenBackground:     $green !default;
+$buttonGreenBg:             $green !default;
 $buttonGreenColor:          $white !default;
 
-$buttonBlueBackground:      $blue !default;
+$buttonBlueBg:              $blue !default;
 $buttonBlueColor:           $white !default;
 
-$buttonLightGreyBackground: $lightgrey !default;
+$buttonLightGreyBg:         $lightgrey !default;
 $buttonLightGreyColor:      $white !default;
 
-$buttonYellowBackground:    $yellow !default;
+$buttonYellowBg:            $yellow !default;
 $buttonYellowColor:         $white !default;
+
+$buttonAccentBg:            $accentColor !default;
+$buttonAccentColor:         $accentInvert !default;
 
 
 /*Size*/

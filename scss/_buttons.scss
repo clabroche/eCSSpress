@@ -1,10 +1,11 @@
 
 /*Buttons Color*/
-.btn{@include colorizeButton($buttonNormalBackground,$buttonNormalColor);}
-.btn-red{@include colorizeButton($buttonRedBackground,$buttonRedColor);}
-.btn-yellow{@include colorizeButton($buttonYellowBackground,$buttonYellowColor);}
-.btn-green{@include colorizeButton($buttonGreenBackground,$buttonGreenColor);}
-.btn-blue{@include colorizeButton($buttonBlueBackground,$buttonBlueColor);}
+.btn{@include colorizeButton($buttonNormalBg,$buttonNormalColor);}
+.btn-red{@include colorizeButton($buttonRedBg,$buttonRedColor);}
+.btn-yellow{@include colorizeButton($buttonYellowBg,$buttonYellowColor);}
+.btn-green{@include colorizeButton($buttonGreenBg,$buttonGreenColor);}
+.btn-blue{@include colorizeButton($buttonBlueBg,$buttonBlueColor);}
+.btn-accent{@include colorizeButton($buttonAccentBg,$buttonAccentColor);}
 
 
 
