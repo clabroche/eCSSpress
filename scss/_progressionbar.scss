@@ -11,6 +11,7 @@
 .progressionbar-yellow{@include make-progressbar($progressionYellowBackground);}
 .progressionbar-green {@include make-progressbar($progressionGreenBackground);}
 .progressionbar-blue  {@include make-progressbar($progressionBlueBackground);}
+.progressionbar-accent  {@include make-progressbar($progressionAccentBackground);}
 
 
 @for $status from 0 through 100 {
