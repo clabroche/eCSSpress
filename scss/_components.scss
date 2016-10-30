@@ -29,3 +29,50 @@
 		margin-top: 20px;
 	}
 }
+
+
+
+.timeline{
+	.timelime-item{
+		padding-bottom: 10px;
+		display: flex;
+		flex-direction: row;
+
+
+		.timeline-time-container{
+			text-align: center;
+
+			.timeline-time-button{
+				@extend .btn;
+				@extend .btn-x-lg;
+				@include colorizeButton($timelineTimeBg,$timelineTimeColor);
+				word-wrap: break-word;
+			}
+		}
+
+
+
+
+		.timeline-description{
+			background-color: $timelineDescriptionBg;
+			position: relative;
+			margin-left: $timelineArrowWidth;
+			min-height: $timelineArrowHeight;
+			padding-top: $timelinePaddingTop;
+			padding-left: $timelineDescriptionPaddingLeft;
+			color: $timelineDescriptionColor;
+			&::before{
+				content: '';
+				display: block;
+				position: absolute;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: ($timelineArrowHeight/2) $timelineArrowWidth ($timelineArrowHeight/2) 0;
+				border-color: transparent $timelineDescriptionBg transparent transparent;
+				left: -$timelineArrowWidth;
+
+			}
+		}
+	}
+}
