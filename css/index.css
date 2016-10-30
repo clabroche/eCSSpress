@@ -20,6 +20,7 @@
 /*Header*/
 /*Jumbotron*/
 /*Progressionbar*/
+/*timeline*/
 /*======================================*/
 /*=             Grids                  =*/
 /*======================================*/
@@ -374,54 +375,42 @@
 section {
   margin-bottom: 100px; }
 
-.row-float, .row-flex {
+#flex-grids .row-float, #flex-grids .row-flex, #float-grids .row-float, #float-grids .row-flex {
   background-color: #E5E5E5; }
-
-.span-1-flex, .span-1-float {
+#flex-grids .span-1-flex, #flex-grids .span-1-float, #float-grids .span-1-flex, #float-grids .span-1-float {
   background-color: grey;
   color: white; }
-
-.span-2-flex, .span-2-float {
+#flex-grids .span-2-flex, #flex-grids .span-2-float, #float-grids .span-2-flex, #float-grids .span-2-float {
   background-color: grey;
   color: white; }
-
-.span-3-flex, .span-3-float {
+#flex-grids .span-3-flex, #flex-grids .span-3-float, #float-grids .span-3-flex, #float-grids .span-3-float {
   background-color: grey;
   color: white; }
-
-.span-4-flex, .span-4-float {
+#flex-grids .span-4-flex, #flex-grids .span-4-float, #float-grids .span-4-flex, #float-grids .span-4-float {
   background-color: grey;
   color: white; }
-
-.span-5-flex, .span-5-float {
+#flex-grids .span-5-flex, #flex-grids .span-5-float, #float-grids .span-5-flex, #float-grids .span-5-float {
   background-color: grey;
   color: white; }
-
-.span-6-flex, .span-6-float {
+#flex-grids .span-6-flex, #flex-grids .span-6-float, #float-grids .span-6-flex, #float-grids .span-6-float {
   background-color: grey;
   color: white; }
-
-.span-7-flex, .span-7-float {
+#flex-grids .span-7-flex, #flex-grids .span-7-float, #float-grids .span-7-flex, #float-grids .span-7-float {
   background-color: grey;
   color: white; }
-
-.span-8-flex, .span-8-float {
+#flex-grids .span-8-flex, #flex-grids .span-8-float, #float-grids .span-8-flex, #float-grids .span-8-float {
   background-color: grey;
   color: white; }
-
-.span-9-flex, .span-9-float {
+#flex-grids .span-9-flex, #flex-grids .span-9-float, #float-grids .span-9-flex, #float-grids .span-9-float {
   background-color: grey;
   color: white; }
-
-.span-10-flex, .span-10-float {
+#flex-grids .span-10-flex, #flex-grids .span-10-float, #float-grids .span-10-flex, #float-grids .span-10-float {
   background-color: grey;
   color: white; }
-
-.span-11-flex, .span-11-float {
+#flex-grids .span-11-flex, #flex-grids .span-11-float, #float-grids .span-11-flex, #float-grids .span-11-float {
   background-color: grey;
   color: white; }
-
-.span-12-flex, .span-12-float {
+#flex-grids .span-12-flex, #flex-grids .span-12-float, #float-grids .span-12-flex, #float-grids .span-12-float {
   background-color: grey;
   color: white; }
 

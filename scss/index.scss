@@ -18,13 +18,15 @@ section{
 	margin-bottom: 100px;
 }
 
-
-.row-float, .row-flex{
-	background-color: $defaultLightBackgroundColor;
-}
-@for $cols from 1 through $numbCol {
-	.span-#{$cols}-flex, .span-#{$cols}-float {
-		background-color: grey;
-		color: white;
+#flex-grids,#float-grids{
+	.row-float, .row-flex{
+		background-color: $defaultLightBackgroundColor;
 	}
+	@for $cols from 1 through $numbCol {
+		.span-#{$cols}-flex, .span-#{$cols}-float {
+			background-color: grey;
+			color: white;
+		}
+	}
+
 }
