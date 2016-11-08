@@ -68,3 +68,7 @@
 }
 .row-flex{@extend %row-flex;}
 .row-float{@extend %row-float;}
+
+/* Construction des listes */
+.ul-square{@extend %ul-square;}
+.ul-nodecoration{@extend %ul-nodecoration;}
