@@ -15,6 +15,23 @@
 
 
 
+/* Construction des boutons du framework*/
+.btn{
+  @extend %btn;
+	@include colorizeButton($buttonNormalBg,$buttonNormalColor);
+}
+
+.btn-sm{@extend %btn-sm;}
+.btn-lg{@extend %btn-lg;}
+.btn-x-lg{@extend %btn-x-lg;}
+.btn-flat{@extend %btn-flat;}
+.btn-fancy{@extend %btn-fancy;}
+
+.btn-red{@include colorizeButton($buttonRedBg,$buttonRedColor);}
+.btn-yellow{@include colorizeButton($buttonYellowBg,$buttonYellowColor);}
+.btn-green{@include colorizeButton($buttonGreenBg,$buttonGreenColor);}
+.btn-blue{@include colorizeButton($buttonBlueBg,$buttonBlueColor);}
+.btn-accent{@include colorizeButton($buttonAccentBg,$buttonAccentColor);}
 
 
 /* Construction des composants du framework*/
