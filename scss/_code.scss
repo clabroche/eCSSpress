@@ -1,4 +1,4 @@
-blockquote,code,.result{
+blockquote,code,%result{
 	margin-bottom: 10px;
 	margin-left: auto;
 	margin-right: auto;
@@ -28,7 +28,7 @@ blockquote{
 		margin-right: $spaceBeetweenQuoteText;
 	}
 
-	& .author{
+	& %author{
 		margin-top: $spaceBeetweenTextAuthor;
 		width: 100%;
 		padding-right: 10px;
@@ -60,7 +60,7 @@ code{
 
 
 
-.result{
+%result{
 	box-shadow: $resultBoxShadow;
 	border-radius: $resultRadius;
 	border: $resultBorder;

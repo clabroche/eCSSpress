@@ -1307,6 +1307,7 @@ ul li {
   height: 10px;
   border-radius: 5px; }
 
+/* Construction des boutons du framework*/
 .btn {
   display: inline-block;
   background-color: #F0F0F0;
@@ -1379,6 +1380,7 @@ ul li {
   .btn-accent:active {
     background-color: #bc5500; }
 
+/* Construction des elements codes specifiques*/
 /* Construction des composants du framework*/
 
 /*# sourceMappingURL=eCSSpress.css.map */
