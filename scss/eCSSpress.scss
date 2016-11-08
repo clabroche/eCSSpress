@@ -11,7 +11,6 @@
 @import "buttons";
 @import "components";
 @import "navigation";
-@import "progressionbar";
 
 
 
@@ -95,3 +94,10 @@
 @for $status from 0 through 100 {
 	.progressionbar-progress-#{$status}{@include make-progressbar-status($status);}
 }
+
+
+/* Construction des tableaux */
+.table{@extend %table;}
+.table-solid{@extend %table-solid;}
+.table-alt{@extend %table-alt;}
+.table-hover{@extend %table-hover;}
