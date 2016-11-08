@@ -80,3 +80,18 @@
 .active{@extend %active;}
 .breadcrumb{@extend %breadcrumb;}
 .pagination{@extend %pagination;}
+
+
+
+/* Construction des barres de progression */
+.progressionbar       {@include make-progressbar($progressionDefaultBackground);}
+.progressionbar-red   {@include make-progressbar($progressionRedBackground);}
+.progressionbar-yellow{@include make-progressbar($progressionYellowBackground);}
+.progressionbar-green {@include make-progressbar($progressionGreenBackground);}
+.progressionbar-blue  {@include make-progressbar($progressionBlueBackground);}
+.progressionbar-accent  {@include make-progressbar($progressionAccentBackground);}
+
+
+@for $status from 0 through 100 {
+	.progressionbar-progress-#{$status}{@include make-progressbar-status($status);}
+}
