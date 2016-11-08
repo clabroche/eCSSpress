@@ -268,7 +268,7 @@ ul li {
 .ul-square li {
   list-style-type: square; }
 
-.ul-nodecoration li, .navbar li, .breadcrumb li, .pagination li {
+.navbar li, .breadcrumb li, .pagination li, .ul-nodecoration li {
   list-style-type: none; }
 
 .table {
@@ -1384,5 +1384,6 @@ ul li {
     margin-left: 102%; }
 
 /* Construction des listes */
+/* Construction de la navbar */
 
 /*# sourceMappingURL=eCSSpress.css.map */

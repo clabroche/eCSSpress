@@ -72,3 +72,11 @@
 /* Construction des listes */
 .ul-square{@extend %ul-square;}
 .ul-nodecoration{@extend %ul-nodecoration;}
+
+
+/* Construction de la navbar */
+.navbar{@extend %navbar;}
+.disabled{@extend %disabled;}
+.active{@extend %active;}
+.breadcrumb{@extend %breadcrumb;}
+.pagination{@extend %pagination;}

@@ -1,5 +1,5 @@
-.navbar {
-    @extend .ul-nodecoration;
+%navbar {
+    @extend %ul-nodecoration;
 
     display: flex;
     flex-direction: column;
@@ -22,11 +22,11 @@
         }
     }
 
-    .disabled {
+    %disabled {
         display: none;
     }
 
-    .active {
+    %active {
         border-left: solid $navbarActive darken($navbarBackgroundColor, 50);
     }
 
@@ -43,7 +43,7 @@
             border-bottom: none;
         }
 
-        .active {
+        %active {
             border-bottom: solid $navbarActive darken($navbarBackgroundColor, 50);
             border-left: none;
         }
@@ -54,8 +54,8 @@
     }
 }
 
-.breadcrumb {
-    @extend .ul-nodecoration;
+%breadcrumb {
+    @extend %ul-nodecoration;
     box-sizing:border-box;
     width: 100%;
     display: flex;
@@ -79,8 +79,8 @@
     color: $breadcrumbColor;
 }
 
-.pagination {
-    @extend .ul-nodecoration;
+%pagination {
+    @extend %ul-nodecoration;
 
     vertical-align: top;
     display: inline-flex;
@@ -95,7 +95,7 @@
         }
     }
 
-    .active {
+    %active {
         background-color: darken($paginationBackground, 20);
         color: lighten($paginationBackground, 20);
     }
