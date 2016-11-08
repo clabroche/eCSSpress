@@ -12,3 +12,19 @@
 @import "components";
 @import "navigation";
 @import "progressionbar";
+
+
+
+
+
+/* Construction des composants du framework*/
+.header{@extend %header;}
+.jumbotron{ @extend %jumbotron;}
+.timeline{@extend %timeline;
+  .timelime-item{@extend %timelime-item;
+  	.timeline-time-container{@extend %timeline-time-container;
+  		.timeline-time-button{@extend %timeline-time-button;}
+    }
+    .timeline-description{@extend %timeline-description;}
+  }
+}

@@ -1,4 +1,4 @@
-.header{
+%header{
 	display: flex;
 	align-items: flex-end;
 	width: 100%;
@@ -15,7 +15,7 @@
 }
 
 
-.jumbotron{
+%jumbotron{
 	width: 100%;
 	background-color: $jumbotronBg;
 	padding-top: $jumbotronPaddingTopBottom;
@@ -32,28 +32,25 @@
 
 
 
-.timeline{
-	.timelime-item{
+%timeline{
+	width: 100%;
+	%timelime-item{
 		padding-bottom: 10px;
 		display: flex;
 		flex-direction: row;
 
 
-		.timeline-time-container{
+		%timeline-time-container{
 			text-align: center;
 
-			.timeline-time-button{
-				@extend .btn;
-				@extend .btn-x-lg;
+			%timeline-time-button{
+				@extend %btn;
+				@extend %btn-x-lg;
 				@include colorizeButton($timelineTimeBg,$timelineTimeColor);
 				word-wrap: break-word;
 			}
 		}
-
-
-
-
-		.timeline-description{
+		%timeline-description{
 			background-color: $timelineDescriptionBg;
 			position: relative;
 			margin-left: $timelineArrowWidth;
