@@ -1,27 +1,10 @@
 
-@for $cols from 1 through $numbCol {
-    .span-#{$cols}-flex{
-        @include make-col-flex($cols);
-    }
-    .span-#{$cols}-float{
-        @include make-col-float($cols);
-    }
-}
-@for $cols from 1 through $numbCol {
-    .offset-#{$cols}-flex{
-        @include make-offset-flex($cols);
-    }
-    .offset-#{$cols}-float{
-        @include make-offset-float($cols);
-    }
-}
-
-.row-flex{
+%row-flex{
     @include make-row-flex();
 }
 
 
 
-.row-float{
+%row-float{
     @include make-row-float();
 }

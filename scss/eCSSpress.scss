@@ -15,7 +15,7 @@
 
 
 
-/* Construction des boutons du framework*/
+/* Construction des boutons */
 .btn{
   @extend %btn;
 	@include colorizeButton($buttonNormalBg,$buttonNormalColor);
@@ -37,13 +37,13 @@
 
 
 
-/* Construction des elements codes specifiques*/
+/* Construction des elements codes specifiques */
 .author{@extend %author;}
 .result{@extend %result;}
 
 
 
-/* Construction des composants du framework*/
+/* Construction des composants */
 .header{@extend %header;}
 .jumbotron{ @extend %jumbotron;}
 .timeline{@extend %timeline;
@@ -54,3 +54,17 @@
     .timeline-description{@extend %timeline-description;}
   }
 }
+
+
+
+/* Construction de la grille */
+@for $cols from 1 through $numbCol {
+    .span-#{$cols}-flex{@include make-col-flex($cols);}
+    .span-#{$cols}-float{@include make-col-float($cols);}
+}
+@for $cols from 1 through $numbCol {
+    .offset-#{$cols}-flex{@include make-offset-flex($cols);}
+    .offset-#{$cols}-float{@include make-offset-float($cols);}
+}
+.row-flex{@extend %row-flex;}
+.row-float{@extend %row-float;}
