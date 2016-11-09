@@ -1,39 +1,38 @@
 
 /*Buttons Color*/
-.btn{@include colorizeButton($buttonNormalBackground,$buttonNormalColor);}
-.btn-red{@include colorizeButton($buttonRedBackground,$buttonRedColor);}
-.btn-yellow{@include colorizeButton($buttonYellowBackground,$buttonYellowColor);}
-.btn-green{@include colorizeButton($buttonGreenBackground,$buttonGreenColor);}
-.btn-blue{@include colorizeButton($buttonBlueBackground,$buttonBlueColor);}
-
-
+%btn{
+	  	line-height: 2em;
+	  	font-size: 1em;
+	  	padding-left: 10px;
+	  	padding-right: 10px;
+}
 
 /*Buttons Size*/
-.btn-sm{
+%btn-sm{
 	font-size: $btn-sm-size;
 	line-height: $btn-sm-lineHeight;
 	padding-left: $btn-sm-paddingLeft;
 	padding-right: $btn-sm-paddingRight;
 }
-.btn-lg{
+%btn-lg{
 	font-size:$btn-lg-size;
 	line-height:$btn-lg-lineHeight;
 	padding-left:$btn-lg-paddingLeft;
 	padding-right:$btn-lg-paddingRight;
 }
 
-.btn-x-lg{
+%btn-x-lg{
 	width: $btn-x-lg-width;
 }
 
 
 /*Buttons Style*/
-.btn-flat{
+%btn-flat{
 	border: none;
 	border-radius: 0px;
 }
 
-.btn-fancy{
+%btn-fancy{
 	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 	background-image: -webkit-linear-gradient(top,rgba(0,0,0,0.1),rgba(0,0,0,0.4));
 }

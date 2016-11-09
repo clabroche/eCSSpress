@@ -1,17 +1,10 @@
 @mixin colorizeButton($backgroundColor,$color) {
-    display: inline-block;
-    
-    background-color: $backgroundColor;
-    color:$color;
+   display: inline-block;
 
-  	line-height: 2em;
-  	font-size: 1em;
+   background-color: $backgroundColor;
+   color:$color;
 
-  	padding-left: 10px;
-  	padding-right: 10px;
-
-
-    border: 1px solid darken($backgroundColor,6);
+   border: 1px solid darken($backgroundColor,6);
   	border-radius: 5px;
 
   	cursor: pointer;

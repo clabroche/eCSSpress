@@ -1,9 +1,9 @@
 @import "reset";
+@import "variablesCustom";
 @import "variables";
 
 @import "mixins";
 
-@import "size";
 @import "grid";
 @import "typos";
 @import "code";
@@ -12,3 +12,103 @@
 @import "buttons";
 @import "components";
 @import "navigation";
+
+
+
+/* Construction des boutons */
+.btn{
+  @extend %btn;
+	@include colorizeButton($buttonNormalBg,$buttonNormalColor);
+}
+
+.btn-sm{@extend %btn-sm;}
+.btn-lg{@extend %btn-lg;}
+.btn-x-lg{@extend %btn-x-lg;}
+.btn-flat{@extend %btn-flat;}
+.btn-fancy{@extend %btn-fancy;}
+
+.btn-red{@include colorizeButton($buttonRedBg,$buttonRedColor);}
+.btn-yellow{@include colorizeButton($buttonYellowBg,$buttonYellowColor);}
+.btn-green{@include colorizeButton($buttonGreenBg,$buttonGreenColor);}
+.btn-blue{@include colorizeButton($buttonBlueBg,$buttonBlueColor);}
+.btn-accent{@include colorizeButton($buttonAccentBg,$buttonAccentColor);}
+
+
+
+
+
+/* Construction des elements codes specifiques */
+.author{@extend %author;}
+.result{@extend %result;}
+
+
+
+/* Construction des composants */
+.header{@extend %header;}
+.jumbotron{ @extend %jumbotron;}
+.timeline{@extend %timeline;
+  .timelime-item{@extend %timelime-item;
+  	.timeline-time-container{@extend %timeline-time-container;
+  		.timeline-time-button{@extend %timeline-time-button;}
+    }
+    .timeline-description{@extend %timeline-description;}
+  }
+}
+
+
+
+/* Construction de la grille */
+@for $cols from 1 through $numbCol {
+    .span-#{$cols}-flex{@include make-col-flex($cols);}
+    .span-#{$cols}-float{@include make-col-float($cols);}
+}
+@for $cols from 1 through $numbCol {
+    .offset-#{$cols}-flex{@include make-offset-flex($cols);}
+    .offset-#{$cols}-float{@include make-offset-float($cols);}
+}
+.row-flex{@extend %row-flex;}
+.row-float{@extend %row-float;}
+
+/* Construction des listes */
+.ul-square{@extend %ul-square;}
+.ul-nodecoration{@extend %ul-nodecoration;}
+
+
+/* Construction de la navbar */
+.navbar{@extend %navbar;}
+.disabled{@extend %disabled;}
+.active{@extend %active;}
+.breadcrumb{@extend %breadcrumb;}
+.pagination{@extend %pagination;}
+
+
+
+/* Construction des barres de progression */
+.progressionbar       {@include make-progressbar($progressionDefaultBackground);}
+.progressionbar-red   {@include make-progressbar($progressionRedBackground);}
+.progressionbar-yellow{@include make-progressbar($progressionYellowBackground);}
+.progressionbar-green {@include make-progressbar($progressionGreenBackground);}
+.progressionbar-blue  {@include make-progressbar($progressionBlueBackground);}
+.progressionbar-accent  {@include make-progressbar($progressionAccentBackground);}
+
+
+@for $status from 0 through 100 {
+	.progressionbar-progress-#{$status}{@include make-progressbar-status($status);}
+}
+
+
+/* Construction des tableaux */
+.table{@extend %table;}
+.table-solid{@extend %table-solid;}
+.table-alt{@extend %table-alt;}
+.table-hover{@extend %table-hover;}
+
+
+
+/* Construction des elements typographiques */
+.lowercase{@extend %lowercase};
+.uppercase{@extend %uppercase};
+.justify{@extend %justify};
+.align-left{@extend %align-left};
+.align-right{@extend %align-right};
+.align-center{@extend %align-center};

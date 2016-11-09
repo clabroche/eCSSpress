@@ -14,11 +14,18 @@ $yellow:                      #c9c817!default;
 $green:                       #2FA242!default;
 $blue:                        #3A49C1!default;
 $lightgrey:                   #eeeeee!default;
+$darkgrey:                    #303030!default;
 $white:                       #ffffff !default;
 $black:                       #000000 !default;
 $grey:                        #797979 !default;
-
+$orange:                      #ef6c00 !default;
 $defaultLightBackgroundColor: #E5E5E5 !default;
+
+$primaryColorDark:            $darkgrey !default;
+$primaryColor:                darken($primaryColorDark,5)!default;
+
+$accentColor:            $orange !default;
+$accentInvert:           $white  !default;
 
 
 /*======================================*/
@@ -26,23 +33,26 @@ $defaultLightBackgroundColor: #E5E5E5 !default;
 /*======================================*/
 
 /*Color*/
-$buttonNormalBackground:    #F0F0F0 !default;
+$buttonNormalBg:            #F0F0F0 !default;
 $buttonNormalColor:         $black !default;
 
-$buttonRedBackground:       $red !default;
+$buttonRedBg:               $red !default;
 $buttonRedColor:            $white !default;
 
-$buttonGreenBackground:     $green !default;
+$buttonGreenBg:             $green !default;
 $buttonGreenColor:          $white !default;
 
-$buttonBlueBackground:      $blue !default;
+$buttonBlueBg:              $blue !default;
 $buttonBlueColor:           $white !default;
 
-$buttonLightGreyBackground: $lightgrey !default;
+$buttonLightGreyBg:         $lightgrey !default;
 $buttonLightGreyColor:      $white !default;
 
-$buttonYellowBackground:    $yellow !default;
+$buttonYellowBg:            $yellow !default;
 $buttonYellowColor:         $white !default;
+
+$buttonAccentBg:            $accentColor !default;
+$buttonAccentColor:         $accentInvert !default;
 
 
 /*Size*/
@@ -68,7 +78,7 @@ $btn-x-lg-width:            100% !default;
 
 /*codes*/
 $codeColor:               #303030 !default;
-$codeLineHeight:          1.2em;
+$codeLineHeight:          1.2em !default;
 $codeRadius:              $radius !default;
 $codeBorder:              $border !default;
 $codeBoxShadow:           $boxShadow !default;
@@ -121,7 +131,26 @@ $jumbotronBg:               $defaultLightBackgroundColor !default;
 $jumbotronPaddingLeftRight: 30px !default;
 $jumbotronPaddingTopBottom: 30px !default;
 
-
+/*Progressionbar*/
+$progressionbarHeight:      10px                  !default;
+$progressionbarPadding:     4px                    !default;
+$progressionbarRadiusInt:   $progressionbarHeight/2 !default;
+$progressionbarRadiusExt:   $progressionbarRadiusInt + $progressionbarPadding !default;
+$progressionDefaultBackground: $grey !default;
+$progressionRedBackground:  $red                  !default;
+$progressionYellowBackground:    $yellow !default;
+$progressionGreenBackground:   $green !default;
+$progressionBlueBackground:  $blue !default;
+$progressionAccentBackground:$accentColor;
+/*timeline*/
+$timelineArrowWidth:             20px !default;
+$timelineArrowHeight:            20px !default;
+$timelineDescriptionPaddingLeft: 10px !default;
+$timelinePaddingTop:             10px !default;
+$timelineDescriptionBg:          #f5f5f6 !default;
+$timelineDescriptionColor:       $black !default;
+$timelineTimeBg:                 $accentColor !default;
+$timelineTimeColor:              $white !default;
 
 
 

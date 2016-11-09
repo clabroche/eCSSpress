@@ -1,4 +1,4 @@
-.table {
+%table {
 	border-collapse: collapse;
 	width: 100%;
 	margin: auto;
@@ -10,11 +10,11 @@
 	}
 }
 
-.table-solid td,.table-solid th{border: $tableBorderSize $tableBorderType $tableBorderColor;}
+%table-solid td,%table-solid th{border: $tableBorderSize $tableBorderType $tableBorderColor;}
 
-.table-alt tr:nth-child(even) {background-color: $tableEven;}
+%table-alt tr:nth-child(even) {background-color: $tableEven;}
 
-.table-hover tr:hover{
+%table-hover tr:hover{
 	background-color: $tableHoverBg;
 	color: $tableHoverColor;
 }
