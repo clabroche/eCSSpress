@@ -101,3 +101,13 @@
 .table-solid{@extend %table-solid;}
 .table-alt{@extend %table-alt;}
 .table-hover{@extend %table-hover;}
+
+
+
+/* Construction des elements typographiques */
+.lowercase{@extend %lowercase};
+.uppercase{@extend %uppercase};
+.justify{@extend %justify};
+.align-left{@extend %align-left};
+.align-right{@extend %align-right};
+.align-center{@extend %align-center};
