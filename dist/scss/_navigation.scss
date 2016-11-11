@@ -8,6 +8,10 @@
         min-height: $navbarHeight;
         line-height: $navbarHeight;
         padding-left: 10px;
+        a {
+          color: $navbarColor;
+          text-decoration: none;
+        }
     }
 
     @media screen and (min-width: $navbarMedium) {
@@ -19,7 +23,7 @@
         }
 
         %active {
-            border-bottom: solid $navbarActive darken($navbarBackgroundColor, 50);
+            border-bottom: solid $navbarActive darken($navbarBackgroundColor, 15);
             border-left: none;
         }
 
@@ -48,7 +52,7 @@
             text-align: center;
 
             &:hover {
-                background-color: darken($navbarBackgroundColor, 20);
+                background-color: darken($navbarBackgroundColor, 10);
             }
         }
 
@@ -57,7 +61,7 @@
         }
 
         %active {
-            border-left: solid $navbarActive darken($navbarBackgroundColor, 50);
+            border-left: solid $navbarActive darken($navbarBackgroundColor, 15);
         }
 
         a {
@@ -74,7 +78,7 @@
             }
 
             %active {
-                border-bottom: solid $navbarActive darken($navbarBackgroundColor, 50);
+                border-bottom: solid $navbarActive darken($navbarBackgroundColor, 15);
                 border-left: none;
             }
 

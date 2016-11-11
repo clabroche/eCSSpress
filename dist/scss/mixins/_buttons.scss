@@ -8,7 +8,9 @@
   	border-radius: 5px;
 
   	cursor: pointer;
-
+   a{
+     color: $color;
+   }
     &:hover,&:focus {background-color: darken($backgroundColor,5);}
     &:active{background-color: darken($backgroundColor,10);}
 }
