@@ -1,0 +1,39 @@
+h1,h2,h3,h4,h5,h6{
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+	font-weight: bold;
+	margin-top: $titleMargin;
+	margin-bottom: $titleMargin;
+}
+
+h1{font-size: ( ($titleSizeMax - $titleSizeMin) / 5 ) * 5 + $titleSizeMin;}
+h2{font-size: ( ($titleSizeMax - $titleSizeMin) / 5 ) * 4 + $titleSizeMin;}
+h3{font-size: ( ($titleSizeMax - $titleSizeMin) / 5 ) * 3 + $titleSizeMin;}
+h4{font-size: ( ($titleSizeMax - $titleSizeMin) / 5 ) * 2 + $titleSizeMin;}
+h5{font-size: ( ($titleSizeMax - $titleSizeMin) / 5 ) * 1 + $titleSizeMin;}
+h6{font-size: ( ($titleSizeMax - $titleSizeMin) / 5 ) * 0 + $titleSizeMin;}
+
+h1 >small,h2>small,h3>small,h4>small,h5>small,h6>small, .sub{
+	font-size: $smallFontSize;
+	color:$smallColor;
+}
+
+p {margin-bottom: $paragraphMarginBottom;}
+
+
+mark{background-color: $markBg}
+del {text-decoration: line-through;}
+ins {text-decoration: underline;}
+strong{font-weight: bold;}
+em{font-style: italic;}
+abbr{
+	border-bottom: 1px dotted black;
+	text-decoration: none ;
+}
+
+
+%lowercase{text-transform: lowercase;}
+%uppercase{text-transform: uppercase;}
+%justify{text-align: justify;}
+%align-left{text-align: left;}
+%align-right{text-align: right;}
+%align-center{text-align: center;}
