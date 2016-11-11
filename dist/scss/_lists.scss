@@ -1,0 +1,13 @@
+ul li {
+    margin-left: $listMargin;
+    display: list-item;
+    list-style-type: disc;
+}
+
+%ul-square li {
+    list-style-type: square;
+}
+
+%ul-nodecoration li {
+    list-style-type: none;
+}

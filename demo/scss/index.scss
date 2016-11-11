@@ -1,0 +1,37 @@
+@import "../../dist/scss/eCSSpress";
+
+
+
+
+
+#container{
+	margin: 0 auto;
+	width: 85%;
+}
+
+
+
+
+section{
+	margin-bottom: 100px;
+}
+
+
+#flex-grids,#float-grids{
+	@for $cols from 1 through $numbCol {
+		.span-#{$cols}-flex, .span-#{$cols}-float {
+			background-color: $grey;
+			color: $white;
+		}
+	}
+}
+
+
+/*Navbar*/
+$navbarBackgroundColor:     $accentColor !default;
+$navbarColor:               #000000 !default;
+$navbarPadding:             1em !default;
+$navbarActive:              4px !default;
+$navbarMedium:              $responsiveMedium !default;
+$navbarLarge:               $responsiveLarge !default;
+$navbarHeight:              50px !default;
