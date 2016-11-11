@@ -75,7 +75,10 @@
 
 
 /* Construction de la navbar */
-.navbar{@extend %navbar;}
+.navbar{
+  @extend %navbar;
+  .logo{@extend %logo;}
+}
 .disabled{@extend %disabled;}
 .active{@extend %active;}
 .breadcrumb{@extend %breadcrumb;}

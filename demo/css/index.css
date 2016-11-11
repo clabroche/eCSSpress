@@ -316,7 +316,7 @@ ul li {
 .ul-square li {
   list-style-type: square; }
 
-.navbar li, .breadcrumb li, .pagination li, .ul-nodecoration li {
+.navbar ul li, .breadcrumb li, .pagination li, .ul-nodecoration li {
   list-style-type: none; }
 
 .table {
@@ -438,29 +438,15 @@ ul li {
         left: -20px; }
 
 .navbar {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
   background-color: #E5E5E5;
-  width: 100%;
-  min-height: 50px;
-  line-height: 50px; }
-  .navbar li {
-    padding-left: 1em;
-    padding-right: 1em;
-    margin: 0;
-    border-bottom: 1px solid #b2b2b2;
-    text-align: center; }
-    .navbar li:hover {
-      background-color: #b2b2b2; }
-  .navbar .disabled {
-    display: none; }
-  .navbar .active {
-    border-left: solid 4px #666666; }
-  .navbar a {
-    text-decoration: none;
-    color: #000000; }
+  display: flex;
+  flex-direction: column; }
+  .navbar .logo {
+    width: 20%;
+    display: inline-block;
+    min-height: 50px;
+    line-height: 50px;
+    padding-left: 10px; }
   @media screen and (min-width: 400px) {
     .navbar {
       flex-direction: row;
@@ -472,6 +458,43 @@ ul li {
         border-left: none; } }
   @media screen and (min-width: 400px) and (min-width: 900px) {
     .navbar {
+      justify-content: flex-end; } }
+
+  .navbar ul {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 80%;
+    min-height: 50px;
+    line-height: 50px; }
+    .navbar ul li {
+      padding-left: 1em;
+      padding-right: 1em;
+      margin: 0;
+      border-bottom: 1px solid #b2b2b2;
+      text-align: center; }
+      .navbar ul li:hover {
+        background-color: #b2b2b2; }
+    .navbar ul .disabled {
+      display: none; }
+    .navbar ul .active {
+      border-left: solid 4px #666666; }
+    .navbar ul a {
+      text-decoration: none;
+      color: #000000; }
+    @media screen and (min-width: 400px) {
+      .navbar ul {
+        flex-direction: row;
+        justify-content: space-around; }
+        .navbar ul li {
+          border-bottom: none; }
+        .navbar ul .active {
+          border-bottom: solid 4px #666666;
+          border-left: none; } }
+  @media screen and (min-width: 400px) and (min-width: 900px) {
+    .navbar ul {
       justify-content: flex-end; } }
 
 .breadcrumb {

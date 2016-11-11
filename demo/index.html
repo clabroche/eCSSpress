@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
-    <ul class="navbar">
+    <div class="navbar">
+
+      <div class="logo">dzadazdazd</div>
+      <ul class="navbar">
       <li><a href="index.html">Documentation</a></li>
       <li><a href="download.html">Téléchargements</a></li>
-    </ul>
+      </ul>
+    </div class="navbar"
     <div class="header">
       <h1>Documentation
         <small>eCSSpress framework</small>
@@ -429,18 +433,24 @@
         <section id="navbar">
             <h1>Les barres de navigation</h1>
             <code>
-              <span>&lt;ul class="navbar"></span>
-              <span>  &lt;li>Voici le premier lien&lt;/li></span>
-              <span>  &lt;li class="disabled">Voici le deuxième lien désactivé&lt;/li></span>
-              <span>  &lt;li class="active">Voici le troisième lien actif&lt;/li></span>
-              <span>&lt;/ul></span>
+              <span>&lt;div class="navbar"></span>
+              <span>  &lt;div class="logo">Logo&lt;/div></span>
+              <span>  &lt;ul></span>
+              <span>    &lt;li>Voici le premier lien&lt;/li></span>
+              <span>    &lt;li class="disabled">Voici le deuxième lien désactivé&lt;/li></span>
+              <span>    &lt;li class="active">Voici le troisième lien actif&lt;/li></span>
+              <span>  &lt;/ul></span>
+              <span>&lt;/div></span>
             </code>
             <div class="result">
-                <ul class="navbar">
+              <div class="navbar">
+                <div class="logo">Logo</div>
+                <ul>
                     <li>Voici le premier lien</li>
                     <li class="disabled">Voici le deuxième lien désactivé</li>
                     <li class="active">Voici le troisième lien actif</li>
                 </ul>
+              </div>
             </div>
         </section>
         <section id="breadcrumb">
