@@ -1,38 +1,13 @@
-%navbar {
-    @extend %ul-nodecoration;
-
+%navbar{
+    background-color: $navbarBackgroundColor;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    background-color: $navbarBackgroundColor;
-    width: 100%;
-    min-height: $navbarHeight;
-    line-height: $navbarHeight;
-
-    li {
-        padding-left: $navbarPadding;
-        padding-right: $navbarPadding;
-        margin: 0;
-        border-bottom: 1px solid darken($navbarBackgroundColor, 20);
-        text-align: center;
-
-        &:hover {
-            background-color: darken($navbarBackgroundColor, 20);
-        }
-    }
-
-    %disabled {
-        display: none;
-    }
-
-    %active {
-        border-left: solid $navbarActive darken($navbarBackgroundColor, 50);
-    }
-
-    a {
-        text-decoration: none;
-        color: $navbarColor;
+    %logo{
+        width: $navbarLogoWidth;
+        display: inline-block;
+        min-height: $navbarHeight;
+        line-height: $navbarHeight;
+        padding-left: 10px;
     }
 
     @media screen and (min-width: $navbarMedium) {
@@ -52,8 +27,63 @@
             justify-content: flex-end;
         }
     }
-}
 
+    ul {
+
+        @extend %ul-nodecoration;
+        float:right;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        width: 100%-$navbarLogoWidth;
+        min-height: $navbarHeight;
+        line-height: $navbarHeight;
+
+        li {
+            padding-left: $navbarPadding;
+            padding-right: $navbarPadding;
+            margin: 0;
+            border-bottom: 1px solid darken($navbarBackgroundColor, 20);
+            text-align: center;
+
+            &:hover {
+                background-color: darken($navbarBackgroundColor, 20);
+            }
+        }
+
+        %disabled {
+            display: none;
+        }
+
+        %active {
+            border-left: solid $navbarActive darken($navbarBackgroundColor, 50);
+        }
+
+        a {
+            text-decoration: none;
+            color: $navbarColor;
+        }
+
+        @media screen and (min-width: $navbarMedium) {
+            flex-direction: row;
+            justify-content: space-around;
+
+            li {
+                border-bottom: none;
+            }
+
+            %active {
+                border-bottom: solid $navbarActive darken($navbarBackgroundColor, 50);
+                border-left: none;
+            }
+
+            @media screen and (min-width: $navbarLarge) {
+                justify-content: flex-end;
+            }
+        }
+    }
+}
 %breadcrumb {
     @extend %ul-nodecoration;
     box-sizing:border-box;
