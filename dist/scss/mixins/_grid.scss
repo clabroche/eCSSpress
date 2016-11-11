@@ -21,6 +21,7 @@ $widthOne: (100% - $gutter * ($numbCol - 1)) / $numbCol;
 @mixin make-row-flex() {
     display: flex;
     flex-direction: row;
+    margin-bottom: $gutter;
 }
 
 
@@ -47,6 +48,7 @@ $widthOne: (100% - $gutter * ($numbCol - 1)) / $numbCol;
 
 
 @mixin make-row-float() {
+  margin-bottom: $gutter;
     display: table;
     clear: both;
     width: 100%;
