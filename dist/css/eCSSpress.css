@@ -515,8 +515,12 @@ ul li {
   justify-content: flex-start;
   background-color: #E5E5E5;
   padding: 5px;
+  color: #404040;
   border: 1px solid #b2b2b2;
   color: #404040; }
+  .breadcrumb a {
+    color: #404040;
+    text-decoration: none; }
   .breadcrumb li {
     margin-right: 10px;
     margin-left: 0; }
@@ -528,7 +532,11 @@ ul li {
 
 .pagination {
   vertical-align: top;
-  display: inline-flex; }
+  display: inline-flex;
+  color: #000000; }
+  .pagination a {
+    color: #000000;
+    text-decoration: none; }
   .pagination li {
     padding: 10px;
     margin: 0;

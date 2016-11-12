@@ -144,9 +144,11 @@ div, span {
 /*Mark*/
 .row-flex {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-bottom: 2%; }
 
 .row-float {
+  margin-bottom: 2%;
   display: table;
   clear: both;
   width: 100%;
@@ -346,6 +348,10 @@ ul li {
   font-size: 1em;
   padding-left: 10px;
   padding-right: 10px; }
+  .timeline .timelime-item .timeline-time-container .timeline-time-button a, .btn a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none; }
 
 /*Buttons Size*/
 .btn-sm {
@@ -414,6 +420,8 @@ ul li {
         border-radius: 5px;
         cursor: pointer;
         word-wrap: break-word; }
+        .timeline .timelime-item .timeline-time-container .timeline-time-button a {
+          color: #ffffff; }
         .timeline .timelime-item .timeline-time-container .timeline-time-button:hover, .timeline .timelime-item .timeline-time-container .timeline-time-button:focus {
           background-color: #d66000; }
         .timeline .timelime-item .timeline-time-container .timeline-time-button:active {
@@ -447,6 +455,9 @@ ul li {
     min-height: 50px;
     line-height: 50px;
     padding-left: 10px; }
+    .navbar .logo a {
+      color: #000000;
+      text-decoration: none; }
   @media screen and (min-width: 400px) {
     .navbar {
       flex-direction: row;
@@ -454,7 +465,7 @@ ul li {
       .navbar li {
         border-bottom: none; }
       .navbar .active {
-        border-bottom: solid 4px #666666;
+        border-bottom: solid 4px #bfbfbf;
         border-left: none; } }
   @media screen and (min-width: 400px) and (min-width: 900px) {
     .navbar {
@@ -476,11 +487,11 @@ ul li {
       border-bottom: 1px solid #b2b2b2;
       text-align: center; }
       .navbar ul li:hover {
-        background-color: #b2b2b2; }
+        background-color: #cccccc; }
     .navbar ul .disabled {
       display: none; }
     .navbar ul .active {
-      border-left: solid 4px #666666; }
+      border-left: solid 4px #bfbfbf; }
     .navbar ul a {
       text-decoration: none;
       color: #000000; }
@@ -491,7 +502,7 @@ ul li {
         .navbar ul li {
           border-bottom: none; }
         .navbar ul .active {
-          border-bottom: solid 4px #666666;
+          border-bottom: solid 4px #bfbfbf;
           border-left: none; } }
   @media screen and (min-width: 400px) and (min-width: 900px) {
     .navbar ul {
@@ -504,8 +515,12 @@ ul li {
   justify-content: flex-start;
   background-color: #E5E5E5;
   padding: 5px;
+  color: #404040;
   border: 1px solid #b2b2b2;
   color: #404040; }
+  .breadcrumb a {
+    color: #404040;
+    text-decoration: none; }
   .breadcrumb li {
     margin-right: 10px;
     margin-left: 0; }
@@ -517,7 +532,11 @@ ul li {
 
 .pagination {
   vertical-align: top;
-  display: inline-flex; }
+  display: inline-flex;
+  color: #000000; }
+  .pagination a {
+    color: #000000;
+    text-decoration: none; }
   .pagination li {
     padding: 10px;
     margin: 0;
@@ -536,6 +555,8 @@ ul li {
   border: 1px solid #e1e1e1;
   border-radius: 5px;
   cursor: pointer; }
+  .btn a {
+    color: #000000; }
   .btn:hover, .btn:focus {
     background-color: #e3e3e3; }
   .btn:active {
@@ -548,6 +569,8 @@ ul li {
   border: 1px solid #ac0f0f;
   border-radius: 5px;
   cursor: pointer; }
+  .btn-red a {
+    color: #ffffff; }
   .btn-red:hover, .btn-red:focus {
     background-color: #b00f0f; }
   .btn-red:active {
@@ -560,6 +583,8 @@ ul li {
   border: 1px solid #aead14;
   border-radius: 5px;
   cursor: pointer; }
+  .btn-yellow a {
+    color: #ffffff; }
   .btn-yellow:hover, .btn-yellow:focus {
     background-color: #b2b114; }
   .btn-yellow:active {
@@ -572,6 +597,8 @@ ul li {
   border: 1px solid #288a38;
   border-radius: 5px;
   cursor: pointer; }
+  .btn-green a {
+    color: #ffffff; }
   .btn-green:hover, .btn-green:focus {
     background-color: #298e3a; }
   .btn-green:active {
@@ -584,6 +611,8 @@ ul li {
   border: 1px solid #3340a9;
   border-radius: 5px;
   cursor: pointer; }
+  .btn-blue a {
+    color: #ffffff; }
   .btn-blue:hover, .btn-blue:focus {
     background-color: #3442ad; }
   .btn-blue:active {
@@ -596,6 +625,8 @@ ul li {
   border: 1px solid #d05e00;
   border-radius: 5px;
   cursor: pointer; }
+  .btn-accent a {
+    color: #ffffff; }
   .btn-accent:hover, .btn-accent:focus {
     background-color: #d66000; }
   .btn-accent:active {

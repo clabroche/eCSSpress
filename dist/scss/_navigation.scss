@@ -96,6 +96,12 @@
     justify-content: flex-start;
     background-color: $breadcrumbBackgroundColor;
     padding: $breadcrumbPadding;
+
+    color: $breadcrumbColor;
+    a {
+      color: $breadcrumbColor;
+      text-decoration: none;
+    }
     li {
         margin-right: $breadcrumbMargin;
         margin-left: 0;
@@ -118,7 +124,11 @@
 
     vertical-align: top;
     display: inline-flex;
-
+    color: $paginationColor;
+    a {
+      color: $paginationColor;
+      text-decoration: none;
+    }
     li {
         padding: $paginationPadding;
         margin: 0;
