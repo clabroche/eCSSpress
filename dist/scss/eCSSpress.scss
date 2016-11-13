@@ -119,3 +119,9 @@
 
 /* Construction des formulaires */
 .form{@extend %formulaire;}
+
+/* Construction des alertes */
+.alerte-attention{@include make-alerte($alerteAttentionBg,$alerteAttentionColor);}
+.alerte-information{@include make-alerte($alerteInformationBg,$alerteInformationColor);}
+.alerte-succes{@include make-alerte($alerteSuccesBg,$alerteSuccesColor);}
+.alerte-accent{@include make-alerte($accentColor,$accentInvert);}
