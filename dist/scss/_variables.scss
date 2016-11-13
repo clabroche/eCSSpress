@@ -31,6 +31,20 @@ $accentInvert:           $white  !default;
 /*======================================*/
 /*=              Buttons               =*/
 /*======================================*/
+$alerteAttentionBg: $red;
+$alerteAttentionColor: $white;
+$alerteInformationBg: $blue;
+$alerteInformationColor: $white;
+$alerteSuccesBg: $green;
+$alerteSuccesColor: $white;
+
+$alertePadding:10px;
+
+
+
+/*======================================*/
+/*=              Buttons               =*/
+/*======================================*/
 
 /*Color*/
 $buttonNormalBg:            #F0F0F0 !default;

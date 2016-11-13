@@ -101,6 +101,9 @@ div, span {
 /*======================================*/
 /*=              Buttons               =*/
 /*======================================*/
+/*======================================*/
+/*=              Buttons               =*/
+/*======================================*/
 /*Color*/
 /*Size*/
 /*======================================*/
@@ -1529,6 +1532,51 @@ ul li {
 
 /* Construction des tableaux */
 /* Construction des elements typographiques */
+/* Construction des alertes */
+.alerte-attention {
+  display: inline-block;
+  width: 100%;
+  background-color: #c81111;
+  color: #ffffff;
+  border: 1px solid #ac0f0f;
+  padding: 10px;
+  border-radius: 5px; }
+  .alerte-attention a {
+    color: #ffffff; }
+
+.alerte-information {
+  display: inline-block;
+  width: 100%;
+  background-color: #3A49C1;
+  color: #ffffff;
+  border: 1px solid #3340a9;
+  padding: 10px;
+  border-radius: 5px; }
+  .alerte-information a {
+    color: #ffffff; }
+
+.alerte-succes {
+  display: inline-block;
+  width: 100%;
+  background-color: #2FA242;
+  color: #ffffff;
+  border: 1px solid #288a38;
+  padding: 10px;
+  border-radius: 5px; }
+  .alerte-succes a {
+    color: #ffffff; }
+
+.alerte-accent {
+  display: inline-block;
+  width: 100%;
+  background-color: #ef6c00;
+  color: #ffffff;
+  border: 1px solid #d05e00;
+  padding: 10px;
+  border-radius: 5px; }
+  .alerte-accent a {
+    color: #ffffff; }
+
 #container {
   margin: 0 auto;
   width: 85%; }
