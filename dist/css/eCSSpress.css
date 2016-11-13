@@ -485,7 +485,7 @@ ul li {
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    width: 80%;
+    width: 100%;
     min-height: 50px;
     line-height: 50px; }
     .navbar ul li {
