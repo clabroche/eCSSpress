@@ -151,7 +151,9 @@ div, span {
 .row-flex {
   display: flex;
   flex-direction: row;
-  margin-bottom: 2%; }
+  margin-bottom: 2%;
+  width: 100%;
+  flex-wrap: wrap; }
 
 .row-float {
   margin-bottom: 2%;
