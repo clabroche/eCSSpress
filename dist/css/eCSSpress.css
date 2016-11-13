@@ -118,6 +118,9 @@ div, span {
 /*Progressionbar*/
 /*timeline*/
 /*======================================*/
+/*=             Formulaire             =*/
+/*======================================*/
+/*======================================*/
 /*=             Grids                  =*/
 /*======================================*/
 /*Grids*/
@@ -546,6 +549,27 @@ ul li {
   .pagination .active {
     background-color: #b2b2b2;
     color: white; }
+
+*
+.form input, *
+.form select {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: solid 1px #ef6c00;
+  box-shadow: 0px 0px 3px 1px #ef6c00 inset;
+  background-color: #ffffff;
+  color: #000000; }
+*
+.form input:hover, *
+.form select:hover {
+  border: solid 1px #469450;
+  box-shadow: 0px 0px 5px #ef6c00; }
+*
+.form input:focus, *
+.form select:focus {
+  border: solid 1px #469450;
+  box-shadow: 0px 0px 10px #ef6c00; }
 
 /* Construction des boutons */
 .btn {
