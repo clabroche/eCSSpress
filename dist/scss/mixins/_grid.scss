@@ -22,6 +22,8 @@ $widthOne: (100% - $gutter * ($numbCol - 1)) / $numbCol;
     display: flex;
     flex-direction: row;
     margin-bottom: $gutter;
+    width:100%;
+    flex-wrap: wrap;
 }
 
 
