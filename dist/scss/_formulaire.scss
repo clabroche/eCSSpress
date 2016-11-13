@@ -1,0 +1,22 @@
+form{
+	input, select{
+		width:100%;
+		margin-bottom: $marginInputTopBottom;
+		margin-top: $marginInputTopBottom;
+		border: solid 1px $formBorder;
+		box-shadow: 0px 0px 3px 1px $formShadow inset;
+		background-color: $formBg;
+		color:$formColor;
+	}
+	input:hover, select:hover{
+		border: solid 1px #469450;
+		box-shadow:0px 0px 5px $formHover;
+	}
+
+
+	input:focus, select:focus{
+		border: solid 1px #469450;
+		box-shadow:0px 0px 10px $formFocus;
+	}
+
+}
