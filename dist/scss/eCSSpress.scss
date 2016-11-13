@@ -115,4 +115,7 @@
 .justify{@extend %justify};
 .align-left{@extend %align-left};
 .align-right{@extend %align-right};
-.align-center{@extend %align-center};
+.align-center{@extend %align-center};*
+
+/* Construction des formulaires */
+.form{@extend %formulaire;}
