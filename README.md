@@ -4,31 +4,10 @@ eCSSpress est un framework permettant de coder plus vite la partie CSS en ayant 
 
 ## Installation ##
 
-Vous pouvez installer ce framework avec bower: 
-
-
-
+Vous pouvez installer ce framework avec npm:
+``` bash
+npm i --save ecsspress
 ```
-#!bash
-echo '{        
-  "name" : "projet",
-  "version": "0.1",
-  "dependencies" : {
-    "eCSSpress" : "https://Iryu54@bitbucket.org/Iryu54/ecsspress.git"
-  }
-}' > bower.json && bower install
-
-```
-ou si vous possedez déjà un bower.json, ajoutez simplement la ligne suivante dans la partie dependencies
-
-
-```
-#!bash
-"eCSSpress" : "https://Iryu54@bitbucket.org/Iryu54/ecsspress.git"
-
-```
-
-
 
 ## Documentation ##
 
